@@ -1,0 +1,16 @@
+* {
+    font-size: 62.5%;
+}
+
+
+header {
+    min-height: 65rem;
+    background-image: url(../images/3626307.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
