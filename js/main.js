@@ -1,11 +1,12 @@
-var swiper = new Swiper(".home-slider", {
-  spaceBetween: 20,
-  effect: "fade",
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+const panel = document.querySelectorAll(".boton");
+
+panel.forEach((p) => {
+  p.addEventListener("click", () => {
+    showText(p);
+  });
 });
+
+function showText(p) {
+  const data = document.getElementById(p.dataset.panel);
+  data.classList.toggle("active");
+}
