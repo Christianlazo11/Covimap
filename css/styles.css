@@ -207,7 +207,13 @@ img {
 
 .banner-left img {
     height: 55%;
-    z-index: 1;
+    width: auto;
+}
+.symptom img {
+    width: auto;
+}
+.prevent img{
+    width: auto;
 }
 @media (max-width: 450px) {
     .banner-left img {
