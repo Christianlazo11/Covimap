@@ -14,6 +14,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- Swiper Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <!-- My Styles Css -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- Icons Boostrap -->
@@ -23,23 +28,611 @@
   <body>
     <header>
       
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header mb-5">
+      <!-- <nav class="navbar navbar-expand-md navbar-dark p-3 sticky-top bg-dark"> -->
+      <div class="row container">
+        <nav
+          class="navbar navbar-expand-md navbar-dark p-3 fixed-top bg-dark col-12"
+        >
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand logo">
+              <img
+                class="rotate"
+                src="./images/coronavirus_white.png"
+                alt="covid"
+              />
+              <span class="fw-bold mysass">covimap</span></a
+            >
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mynav"
+              aria-controls="mynav"
+              aria-expanded="false"
+              aria-label="Toogle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    >Home</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"> Home One</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Home Two</a></li>
+                    <li><a class="dropdown-item" href="#">Home Three</a></li>
+                    <li><a class="dropdown-item" href="#">Home Four</a></li>
+                    <li><a class="dropdown-item" href="#">Home Five</a></li>
+                    <li><a class="dropdown-item" href="#">Home Dark One</a></li>
+                    <li><a class="dropdown-item" href="#">Home Dark Two</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Home Dark Three</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Home Dark Four</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Home Dark Five</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="">Prevention</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="">Qurantine</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    >Pages</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Hand Wash</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Social Distance</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="">Help</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="">Tracker</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="container banner">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 banner-right">
+            <h1 class="text-white display-3 fw-bold">
+              Stay Home, And Player For Victim Of Corona virus.
+            </h1>
+
+            <p class="text-white lh-lg text-banner fs-6">
+              Human coronaviruses are common and are typically associated with
+              mild illnesses, similar to the commom cold. The corona virus
+              COVID-19 is affecting 210 countries & territories around the world
+              and 2 international conveyances
+            </p>
+
+            <div class="card card-banner">
+              <p>Mapita</p>
+              <p>Textos</p>
+            </div>
+
+            <div class="d-flex flex-column btn-circle-content">
+              <card
+                class="btn-circle bg-orange d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-sign-out-alt fs-4"></i>
+              </card>
+              <card
+                class="btn-circle bg-blue d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-headset fs-4"></i>
+              </card>
+              <card
+                class="btn-circle bg-green d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-shopping-cart fs-4"></i>
+              </card>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 banner-left d-flex justify-content-center"
+          >
+            <img src="./images/banner-right-image1.png" alt="sick" />
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Section Symptom start -->
-    <section></section>
-    <!-- Section Symptom end -->
+    <section class="symptom mt-5 mb-5 container">
+      <h3 class="text-center fs-5">Symptom</h3>
+      <h2 class="text-center display-4 fw-bold">
+        Basic Symptom Against Corona virus
+      </h2>
+      <div class="symptom-cards-content mt-5 row">
+        <div class="card-symptom col-md-6 col-lg-4 p-3 h-100">
+          <div class="card p-3 shadow border-0">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <img src="./images/fever.svg" alt="banner-img" />
+            </div>
+
+            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
+            <p class="mb-3 text-center">
+              Fever you feel hot to touch on your chest or back you do not need
+              to measure your temperature. It is also may appear in 2-10 days.
+            </p>
+          </div>
+        </div>
+        <div class="card-symptom col-md-6 col-lg-4 p-3 h-100">
+          <div class="card p-3 shadow border-0">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <img src="./images/cough.svg" alt="banner-img" />
+            </div>
+
+            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
+            <p class="mb-3 text-center">
+              Continuous coughing a lot for more than an hour, or 3 or more
+              coughing episodes in 24 hours. if you usually have a cough, it may
+              be worse than usual.
+            </p>
+          </div>
+        </div>
+        <div class="card-symptom col-md-6 col-lg-4 p-3 h-100">
+          <div class="card p-3 shadow border-0">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <img src="./images/breathing.svg" alt="banner-img" />
+            </div>
+
+            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
+            <p class="mb-3 text-center">
+              Around 1 out of every 6 people who gets COVID-19 becomes seriously
+              ill and develops difficulty breathing or shortness of breath a
+              lot.
+            </p>
+          </div>
+        </div>
+        <div class="card-symptom col-md-6 col-lg-4 p-3 h-100">
+          <div class="card p-3 shadow border-0">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <img src="./images/banner-right.png" alt="banner-img" />
+            </div>
+
+            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
+            <p class="mb-3 text-center">
+              Fever is a key symptom, experts say. Don't fixate on a number, but
+              khow it's really not a fever until your temperature reaches at
+              least 100
+            </p>
+          </div>
+        </div>
+        <div class="card-symptom col-md-6 col-lg-4 p-3 h-100">
+          <div class="card p-3 shadow border-0">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <img src="./images/cough.svg" alt="banner-img" />
+            </div>
+
+            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
+            <p class="mb-3 text-center">
+              People of all ages who experience fever and/or cough associated
+              withdifficulty breathing/shortness of breath
+            </p>
+          </div>
+        </div>
+        <div class="card-symptom col-md-6 col-lg-4 p-3 h-100">
+          <div class="card p-3 shadow border-0">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <img src="./images/breathing.svg" alt="banner-img" />
+            </div>
+
+            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
+            <p class="mb-3 text-center">
+              Older people, and those with underlying medical problems like high
+              blood pressure, heart and lung problems, diabetes, or cancer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Section Prevent start -->
-    <section></section>
-    <!-- Section Prevent start -->
+    <section class="prevent mt-5">
+      <div class="container">
+        <h4 class="text-center fs-5">Prevent</h4>
+        <h2 class="text-center display-3 fw-bold mb-5">
+          Best way to prevent is avoid virus.
+        </h2>
+        <div class="prevent-cards-content row mt-5">
+          <!-- Card start -->
+          <div
+            class="card col-sm-12 col-md-6 p-2 prevent-card bg-transparent h-100"
+          >
+            <div class="card d-flex flex-row bg-transparent border-0">
+              <div class="prevent-card-img">
+                <img src="./images/icon2.png" alt="images" />
+              </div>
+              <div
+                class="prevent-card-text d-flex justify-content-center align-items-center"
+              >
+                <p class="text-center">
+                  Fever is a key symptom, experts say. Don't fixate on a number,
+                  but know it's really not a fever until your temperature
+                  reaches at least 100
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card End -->
+          <!-- Card start -->
+          <div
+            class="card col-sm-12 col-md-6 p-2 prevent-card bg-transparent h-100"
+          >
+            <div class="card d-flex flex-row bg-transparent border-0">
+              <div class="prevent-card-img">
+                <img src="./images/icon2.png" alt="images" />
+              </div>
+              <div
+                class="prevent-card-text d-flex justify-content-center align-items-center"
+              >
+                <p class="text-center">
+                  Fever is a key symptom, experts say. Don't fixate on a number,
+                  but know it's really not a fever until your temperature
+                  reaches at least 100
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Section Spread start -->
-    <section></section>
-    <!-- Section Spread start -->
+    <!-- Section Spreads start -->
+    <section class="spreads padding-v100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <div class="section-title text-center">
+              <h5 class="title">Spreads</h5>
+              <h2 class="title2">Disease spreads from person to person</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 has-animation">
+            <div class="imagen">
+              <img src="images/p-1.jpg" alt="imagen" />
+            </div>
+            <div class="content">
+              <h4 class="mb-4">Wear Facemask</h4>
+              <p class="mb-0">
+                Fever is a key symptom, experts say. Don't fixate on a number,
+                but know it's really not a fever until your temperature reaches
+                at least 100
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 has-animation" data-delay="50">
+            <div class="imagen">
+              <img src="images/p-2.jpg" alt="image" />
+            </div>
+            <div class="content">
+              <h4 class="mb-4">Wash your hangs often</h4>
+              <p class="mb-0">
+                Coughing is another key symptom, but it's not just any cough,
+                said Schaffner. It should be a dry cough that you feel in your
+                chest.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 has-animation"
+            data-delay="100"
+          >
+            <div class="imagen">
+              <img src="images/p-3.jpg" alt="image" />
+            </div>
+            <div class="content">
+              <h4 class="mb-4">Keep social distance</h4>
+              <p class="mb-0">
+                Shortness of breath can be a third -- and very serious --
+                manifestation of Covid-19, and it can occur on its own, without
+                a cough.
+              </p>
+            </div>
+          </div>
 
-    <!-- Section Faqs start -->
-    <section></section>
-    <!-- Section Faqs start -->
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 has-animation"
+            data-delay="150"
+          >
+            <div class="imagen">
+              <img src="images/p-4.jpg" alt="image" />
+            </div>
+            <div class="content">
+              <h4 class="mb-4">Wear Facemask</h4>
+              <p class="mb-0">
+                Fever is a key symptom, experts say. Don't fixate on a number,
+                but know it's really not a fever until your temperature reaches
+                at least 100
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 has-animation"
+            data-delay="200"
+          >
+            <div class="imagen">
+              <img src="images/p-5.jpg" alt="image" />
+            </div>
+            <div class="content">
+              <h4 class="mb-4">Wash your hangs often</h4>
+              <p class="mb-0">
+                Coughing is another key symptom, but it's not just any cough,
+                said Schaffner. It should be a dry cough that you feel in your
+                chest.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 has-animation"
+            data-delay="250"
+          >
+            <div class="imagen">
+              <img src="images/p-6.jpg" alt="image" />
+            </div>
+            <div class="content">
+              <h4 class="mb-4">Keep social distance</h4>
+              <p class="mb-0">
+                Shortness of breath can be a third -- and very serious --
+                manifestation of Covid-19, and it can occur on its own, without
+                a cough.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION SPREADS ENDS-->
+
+    <!--SECTION FAQS START-->
+    <section class="faq padding-v100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <div class="section-title text-center">
+              <h5 class="text-white title" data-delay="0">Faqs</h5>
+              <h2 class="text-white title2" data-delay="50">
+                Frequently Asked Questions
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6 has-animation" data-delay="0">
+            <div
+              class="panel-group"
+              id="accordion"
+              role="tablist"
+              aria-multiselectable="true"
+            >
+              <div data-panel="1" class="panel boton">
+                <div class="boton" role="tab" id="">
+                  <h4 class="panel-title">
+                    <a
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      01. How does COVID-19 spread?
+                    </a>
+                  </h4>
+                </div>
+                <div id="">
+                  <div class="panel-body" id="1">
+                    <p>
+                      Data has shown that it spreads from person to person among
+                      those in close contact (within about 6 feet, or 2 meters).
+                      The virus spreads by respiratory droplets released when
+                      someone infected with the virus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div data-panel="2" class="panel boton">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      2. What are the symptoms of COVID-19?
+                    </a>
+                  </h4>
+                </div>
+                <div id="">
+                  <div class="panel-body" id="2">
+                    <p>
+                      Data has shown that it spreads from person to person among
+                      those in close contact (within about 6 feet, or 2 meters).
+                      The virus spreads by respiratory droplets released when
+                      someone infected with the virus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div data-panel="3" class="panel boton">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      3. Should I wear mask?
+                    </a>
+                  </h4>
+                </div>
+                <div>
+                  <div class="panel-body" id="3">
+                    <p>
+                      Data has shown that it spreads from person to person among
+                      those in close contact (within about 6 feet, or 2 meters).
+                      The virus spreads by respiratory droplets released when
+                      someone infected with the virus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 has-animation" data-delay="50">
+            <div
+              class="panel-group"
+              id="accordion1"
+              role="tablist"
+              aria-multiselectable="true"
+            >
+              <div data-panel="4" class="panel boton">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion1"
+                      href="#collapseFour"
+                      aria-expanded="true"
+                      aria-controls="collapseFour"
+                    >
+                      04. What does it mean to self-isolate?
+                    </a>
+                  </h4>
+                </div>
+                <div>
+                  <div class="panel-body" id="4">
+                    <p>
+                      Self-isolation is when a person who is experiencing fever,
+                      cough or other COVID-19 symptoms stays at home and does
+                      not go to work, school or public places. This can be
+                      voluntarily or based on his/her health care provider’s
+                      recommendation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div data-panel="5" class="panel boton">
+                <div class="panel-heading" role="tab" id="headingFive">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion1"
+                      href="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      05. Can children or adolescents catch COVID-19?
+                    </a>
+                  </h4>
+                </div>
+                <div>
+                  <div class="panel-body" id="5">
+                    <p>
+                      Children and adults should follow the same guidance on
+                      self-quarantine and self-isolation if there is a risk they
+                      have been exposed or are showing symptoms. It is
+                      particularly important that children avoid contact with
+                      older people.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div data-panel="6" class="panel boton">
+                <div class="panel-heading" role="tab" id="headingSix">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion1"
+                      href="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      06. Is there a vaccine or drug for COVID-19?
+                    </a>
+                  </h4>
+                </div>
+                <div>
+                  <div class="panel-body" id="6">
+                    <p>
+                      While some western, traditional or home remedies may
+                      provide comfort and alleviate symptoms of mild COVID-19,
+                      there are no medicines that have been shown to prevent or
+                      cure the disease. WHO does not recommend self-medication
+                      with any medicines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Faqs end -->
 
     <!-- Section Wash start -->
     <section>
@@ -218,6 +811,9 @@
       </div>
   </div>
     <!-- Section Footer Ends -->
+
+    <!-- Script Local -->
+    <script src="/js/main.js"></script>
 
     <!-- Script Boosttrap -->
     <script
