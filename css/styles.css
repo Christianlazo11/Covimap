@@ -22,17 +22,10 @@
 /*------card_phone-------*/
 
 .app-wrapper {
-<<<<<<< HEAD
-  
-  padding: 100px 130px;
-  border-radius: 10px;
-  margin-top: 100px;
-=======
     background: linear-gradient(to right, #1e0c9d, #06cdec);
     padding: 100px 130px;
     border-radius: 10px;
     margin-top: 100px;
->>>>>>> d799a9bb43232727ca4e3b990dadc2f1db0341a0
 }
 
 .app-bg {
@@ -59,29 +52,9 @@
 }
 
 .img-phone {
-<<<<<<< HEAD
-  vertical-align: middle;
-  border-style: none;
-  width: auto;
-  transform: translateY(-13rem);
-}
-@media (max-width: 960px) {
-    .img-phone {
-        transform: translateY(1rem);
-    }
-    
-}
-
-.app-wrap-content {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-=======
     vertical-align: middle;
     border-style: none;
     width: auto;
->>>>>>> d799a9bb43232727ca4e3b990dadc2f1db0341a0
 }
 
 .section_news {
@@ -670,12 +643,13 @@ img {
 .nav-info {
     border-right: solid 0.12rem lightgrey;
 }
+
 .text-orange {
     color: orange;
 }
 
 .bg-tracker-pink {
-    background-color:#fff2f2;
+    background-color: #fff2f2;
 }
 
 .bg-tracker-pink2 {
@@ -714,6 +688,7 @@ img {
 .total-case {
     transition: all 0.3 ease-in;
 }
+
 .total-case:hover {
     border: solid 0.15rem red !important;
     transform: scale(1.050);
