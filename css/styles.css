@@ -1,29 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
+
 .title_wash {
-  font-family: "Poppins", sans-serif;
-  color: #121158;
-  padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: #121158;
+    padding-top: 2rem;
 }
 
 .subtitle_wash {
-  font-family: "Poppins", sans-serif;
-  color: #293f73;
+    font-family: "Poppins", sans-serif;
+    color: #293f73;
 }
 
 .img_wash {
-  padding: 2rem;
+    padding: 2rem;
 }
 
+
 /*------card_phone-------*/
+
 .app-wrapper {
+<<<<<<< HEAD
   
   padding: 100px 130px;
   border-radius: 10px;
   margin-top: 100px;
+=======
+    background: linear-gradient(to right, #1e0c9d, #06cdec);
+    padding: 100px 130px;
+    border-radius: 10px;
+    margin-top: 100px;
+>>>>>>> d799a9bb43232727ca4e3b990dadc2f1db0341a0
 }
 
 .app-bg {
@@ -33,23 +42,24 @@ transition: all 0.2s ease-in;
 }
 
 .app-wrap h1 {
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 60px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .app-wrap p {
-  color: #eee;
+    color: #eee;
 }
 
 .app-wrap .app-phone {
-  float: right;
-  position: absolute;
+    float: right;
+    position: absolute;
 }
 
 .img-phone {
+<<<<<<< HEAD
   vertical-align: middle;
   border-style: none;
   width: auto;
@@ -67,173 +77,179 @@ transition: all 0.2s ease-in;
     flex-direction: column;
     align-items: center;
     justify-content: center; */
+=======
+    vertical-align: middle;
+    border-style: none;
+    width: auto;
+>>>>>>> d799a9bb43232727ca4e3b990dadc2f1db0341a0
 }
 
 .section_news {
-  padding: 60px;
+    padding: 60px;
 }
 
 .title_news {
-  font-family: "Poppins", sans-serif;
-  color: #121158;
-  padding-top: 100px;
+    font-family: "Poppins", sans-serif;
+    color: #121158;
+    padding-top: 100px;
 }
 
 .subtitle_news {
-  color: #293f73;
+    color: #293f73;
 }
 
 .footer-wraper {
-  padding: 70px;
-  background-color: #1b2a4e;
+    padding: 70px;
+    background-color: #1b2a4e;
 }
 
 .bottom-logo {
-  padding: 5px;
-  line-height: 30px;
+    padding: 5px;
+    line-height: 30px;
 }
 
 .social-share a {
-  color: white;
-  width: 40px;
-  border-radius: 50%;
-  padding: 5px;
-  background-color: #293F73;
+    color: white;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #293F73;
 }
 
 .social-share a:hover {
-  background-color: #fff;
-  transition: all 0.5s;
-  color: #1b2a4e;
+    background-color: #fff;
+    transition: all 0.5s;
+    color: #1b2a4e;
 }
 
 .parrafo_footer {
-  font-size: 13px;
-  color: #8686b5;
+    font-size: 13px;
+    color: #8686b5;
 }
 
 .copyright {
-  margin: 0;
-  font-size: 13px;
-  color: #8686b5;
+    margin: 0;
+    font-size: 13px;
+    color: #8686b5;
 }
 
 span {
-  color: white;
+    color: white;
 }
 
 .lower-footer {
-  background-color: #1b2a4e;
+    background-color: #1b2a4e;
 }
 
 .widget-title {
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .bottom-widget {
-  font-size: 13px;
-  color: #8686b5;
-  line-height: 1.75;
+    font-size: 13px;
+    color: #8686b5;
+    line-height: 1.75;
 }
 
 .bottom-widget li {
-  list-style: none;
+    list-style: none;
 }
 
 .bottom-widget a {
-  list-style: none;
-  text-decoration: none;
-  text-align: center;
-  color: #8686b5;
-  line-height: 3;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    color: #8686b5;
+    line-height: 3;
 }
 
 .parrafo_news {
-  color: #121158;
-  font-weight: 700;
+    color: #121158;
+    font-weight: 700;
 }
 
 .item_news {
-  color: #3639AE;
-  font-weight: bold;
+    color: #3639AE;
+    font-weight: bold;
 }
 
 .card-body {
-  line-height: 3;
+    line-height: 3;
 }
 
 .post-meta {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
 }
 
 .bi-chat-left {
-  color: gray;
-  padding-right: 10px;
+    color: gray;
+    padding-right: 10px;
 }
 
 .bi-stopwatch {
-  color: gray;
-  padding-right: 10px;
+    color: gray;
+    padding-right: 10px;
 }
 
 .item_new {
-  color: gray;
+    color: gray;
 }
 
 .spreads {
-  margin-top: 5%;
+    margin-top: 5%;
 }
 
 .title {
-  color: #121158;
-  font-family: "Poppins", sans-serif;
+    color: #121158;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10%;
 }
 
 .title2 {
-  color: #293f73;
-  font-size: 53px;
-  font-weight: 680;
-  margin-bottom: 50px;
-  font-family: "Poppins", sans-serif;
+    color: #293f73;
+    font-size: 53px;
+    font-weight: 680;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
 }
 
 .imagen {
-  margin-top: 50px;
-  border-radius: 10px 10px 0 0;
-  overflow: hidden;
-  box-shadow: 0px 30px 60px rgba(132, 132, 167, 0.45);
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0px 30px 60px rgba(132, 132, 167, 0.45);
 }
 
 img {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .content {
-  background: #fff;
-  box-shadow: 0px 30px 60px rgba(160, 159, 202, 0.45);
-  padding: 30px;
-  border-radius: 0 0 10px 10px;
-  position: relative;
-  margin-top: 0px;
+    background: #fff;
+    box-shadow: 0px 30px 60px rgba(160, 159, 202, 0.45);
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    margin-top: 0px;
 }
 
 .content h4 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 15px !important;
-  color: #121158;
-  font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px !important;
+    color: #121158;
+    font-family: "Poppins", sans-serif;
 }
 
 .content p {
-  font-size: 16px;
-  color: #515184;
-  font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #515184;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -259,6 +275,7 @@ img {
     --light: #F8F9FE;
     --dark: #262F5A;
 }
+
 body {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
@@ -268,21 +285,26 @@ body {
 .bg-blue-primary {
     background-color: #3639AE !important;
 }
+
 .text-blue-primary {
     color: #3639AE !important;
 }
+
 .text-blue-secondary {
     color: #673BB7 !important;
 }
+
 .text-blue-dark {
     color: #262F5A !important;
 }
+
 .front {
     z-index: 100;
 }
+
 .header {
     height: 100vh;
-    background-image:linear-gradient(to right, rgba(30,12,124,0.75), rgba(6,205,236,0.75)), url(../images/3626307.jpg);
+    background-image: linear-gradient(to right, rgba(30, 12, 124, 0.75), rgba(6, 205, 236, 0.75)), url(../images/3626307.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -313,41 +335,45 @@ body {
     opacity: .10;
     z-index: -1;
  }  */
+
 @media (max-width: 1450px) {
     .header {
         height: 850px;
     }
 }
+
 @media (max-width: 1200px) {
     .header {
         height: 900px;
     }
 }
+
 @media (max-width: 1000px) {
     .header {
         height: 950px;
     }
 }
+
 @media (max-width: 768px) {
     .header {
         height: 1200px;
     }
 }
+
 @media (max-width: 450px) {
     .header {
         height: 1100px;
     }
 }
+
 img {
     height: 100%;
 }
-
 
 .logo {
     font-size: 1.5rem;
     text-transform: uppercase;
 }
-
 
 .logo img {
     height: 2rem;
@@ -357,7 +383,8 @@ img {
 
 .rotate {
     animation: rotation 6s infinite linear;
-  }
+}
+
 .text-banner {
     font-size: 1.1rem;
 }
@@ -365,6 +392,7 @@ img {
 .card-banner {
     width: 20rem;
 }
+
 
 /* .btn-circle-content {
 
@@ -384,6 +412,7 @@ img {
     height: 3rem;
     cursor: pointer;
 }
+
 @media (max-width: 640px) {
     .btn-circle {
         margin-left: 0;
@@ -410,9 +439,11 @@ img {
 .bg-blue {
     background-color: var(--teal);
 }
+
 .bg-green {
     background-color: var(--green);
 }
+
 .bg-gray-tracker {
     background-color: aliceblue !important;
 }
@@ -425,11 +456,14 @@ img {
     height: 55%;
     width: auto;
 }
+
 @media(max-width: 640px) {
     .banner-left img {
         margin-top: 2rem;
     }
 }
+
+
 /* @media (mix-width:1440px) {
     .banner-left img {
         height: 55% !important;
@@ -442,12 +476,15 @@ img {
         width: auto;
     }
 } */
+
 .symptom img {
     width: auto;
 }
-.prevent img{
+
+.prevent img {
     width: auto;
 }
+
 @media (max-width: 450px) {
     .banner-left img {
         height: 40%;
@@ -457,9 +494,11 @@ img {
 .symptom {
     background: aliceblue;
 }
+
 .symptom img {
     height: 6.2rem;
 }
+
 .slide {
     min-height: 70vh;
     background-size: cover;
@@ -489,119 +528,121 @@ img {
     width: 7rem;
 }
 
-
 .hexagon {
     position: relative;
-    width: 150px; 
+    width: 150px;
     height: 86.60px;
     background-color: #64C7CC;
     margin: 43.30px 0;
-  }
-  
-  .hexagon:before,
-  .hexagon:after {
+}
+
+.hexagon:before,
+.hexagon:after {
     content: "";
     position: absolute;
     width: 0;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
-  }
-  
-  .hexagon:before {
+}
+
+.hexagon:before {
     bottom: 100%;
     border-bottom: 43.30px solid #64C7CC;
-  }
-  
-  .hexagon:after {
+}
+
+.hexagon:after {
     top: 100%;
     width: 0;
     border-top: 43.30px solid #64C7CC;
-  }
-  
- 
-    
-
+}
 
 @keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(359deg);
+        transform: rotate(359deg);
     }
-  }
-
-  .probando {
-      cursor: pointer;
-  }
-
-  .probando p {
-      display: none;
-  }
-
-  .active {
-      display: inline-block !important;
-  }
-.faq {
-  background: url(../images/slide-1.jpg) center center/cover no-repeat local;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  margin-top: 5%;
 }
 
-.faq:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: linear-gradient(to right, #1e0c9d, #06cdec);
-  opacity: 0.95;
+.probando {
+    cursor: pointer;
 }
 
-.faq .container {
-  position: relative;
-  z-index: 2;
-}
-
-.panel {
-  background-color: rgba(30, 12, 157, 0.5);
-  padding: 20px;
-  border: 1px rgba(255, 255, 255, 0.2) solid;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  transition: all 0.4s linear !important;
-}
-
-.panel-title a {
-  color: white;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 8px;
-}
-
-.panel-body p {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+.probando p {
+    display: none;
 }
 
 .active {
-  display: inline-block !important;
+    display: inline-block !important;
+}
+
+.faq {
+    background: url(../images/slide-1.jpg) center center/cover no-repeat local;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 5%;
+}
+
+.faq:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(to right, #1e0c9d, #06cdec);
+    opacity: 0.95;
+}
+
+.faq .container {
+    position: relative;
+    z-index: 2;
+}
+
+.panel {
+    background-color: rgba(30, 12, 157, 0.5);
+    padding: 20px;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.4s linear !important;
+}
+
+.panel-title a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 8px;
+}
+
+.panel-body p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.active {
+    display: inline-block !important;
 }
 
 .panel-body {
-  display: none;
+    display: none;
 }
 
 
 /*# sourceMappingURL=styles.css.map */
 
+
 /* *********************************************************************** */
+
+
 /* Styles Traker */
+
+
 /* *********************************************************************** */
+
 .logo-traker {
     height: 3.4rem;
     width: 3.4rem;
