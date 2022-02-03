@@ -1,16 +1,162 @@
-* {
-    font-size: 62.5%;
+.title_wash {
+  font-family: "Poppins", sans-serif;
+  color: #121158;
+  padding-top: 2rem;
 }
 
-
-header {
-    min-height: 65rem;
-    background-image: url(../images/3626307.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.subtitle_wash {
+  font-family: "Poppins", sans-serif;
+  color: #293f73;
 }
 
-.logo {
-    font-size: 2.5rem;
-    text-transform: uppercase;
+.img_wash {
+  padding: 2rem;
 }
+
+/*------card_phone-------*/
+.app-wrapper {
+  background: linear-gradient(to right, #1e0c9d, #06cdec);
+  padding: 100px 130px;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.app-wrap h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.app-wrap p {
+  color: #eee;
+}
+
+.app-wrap .app-phone {
+  float: right;
+  position: absolute;
+}
+
+.img-phone {
+  vertical-align: middle;
+  border-style: none;
+  width: auto;
+}
+
+.section_news {
+  padding: 60px;
+}
+
+.title_news {
+  font-family: "Poppins", sans-serif;
+  color: #121158;
+  padding-top: 100px;
+}
+
+.subtitle_news {
+  color: #293f73;
+}
+
+.footer-wraper {
+  padding: 70px;
+  background-color: #1b2a4e;
+}
+
+.bottom-logo {
+  padding: 5px;
+  line-height: 30px;
+}
+
+.social-share a {
+  color: white;
+  width: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #293F73;
+}
+
+.social-share a:hover {
+  background-color: #fff;
+  transition: all 0.5s;
+  color: #1b2a4e;
+}
+
+.parrafo_footer {
+  font-size: 13px;
+  color: #8686b5;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 13px;
+  color: #8686b5;
+}
+
+span {
+  color: white;
+}
+
+.lower-footer {
+  background-color: #1b2a4e;
+}
+
+.widget-title {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.bottom-widget {
+  font-size: 13px;
+  color: #8686b5;
+  line-height: 1.75;
+}
+
+.bottom-widget li {
+  list-style: none;
+}
+
+.bottom-widget a {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: #8686b5;
+  line-height: 3;
+}
+
+.parrafo_news {
+  color: #121158;
+  font-weight: 700;
+}
+
+.item_news {
+  color: #3639AE;
+  font-weight: bold;
+}
+
+.card-body {
+  line-height: 3;
+}
+
+.post-meta {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.bi-chat-left {
+  color: gray;
+  padding-right: 10px;
+}
+
+.bi-stopwatch {
+  color: gray;
+  padding-right: 10px;
+}
+
+.item_new {
+  color: gray;
+}
+
+/*# sourceMappingURL=styles.css.map */
