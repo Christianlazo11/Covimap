@@ -16,6 +16,7 @@ No se necesita ningun programa o elemento externo. Con solo visitar el link del 
 
 - Para realizar el deploy el usuario debe acceder desde el link previamente proporcionado. Hecho esto, se abrirá una ventana donde se podrá ver la Web App. 
 - Para poder acceder a los datos en tiempo real, el usuario debe dirigirse al botón llamado "Tracker". 
+
 [![Sin-t-tulo-removebg-preview.png](https://i.postimg.cc/BbvSsxs2/Sin-t-tulo-removebg-preview.png)](https://postimg.cc/qh9Vx6N7)
 
 
