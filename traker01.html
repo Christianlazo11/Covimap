@@ -25,35 +25,138 @@
     />
   </head>
   <body>
-    <section>
-      <div
-        class="d-flex flex-column flex-shrink-0 bg-gray-tracker col-2 vh-100 d-flex justify-content-center border-right"
-        style="width: 6rem"
-      >
-        <a
-          href=""
-          class="d-block d-flex justify-content-center align-items-center pt-3 pb-4"
-          ><img
-            class="logo-traker rotate"
-            src="./images/coronavirus.png"
-            alt="corona"
-        /></a>
-        <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-          <li class="nav-item mb-2">
-            <a href="" class="nav-link py-3 border-bottom">1</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="" class="nav-link active py-3 border-bottom">2</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="" class="nav-link active py-3 border-bottom">3</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="" class="nav-link active py-3 border-bottom">4</a>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <main class="d-flex">
+      <section>
+        <div
+          class="d-flex flex-column flex-shrink-0 bg-gray-tracker col-2 vh-100 d-flex justify-content-center bar-tracker"
+          style="width: 6rem"
+        >
+          <a
+            href="./index.html"
+            class="d-block d-flex justify-content-center align-items-center pt-4 pb-4"
+            ><img
+              class="logo-traker rotate"
+              src="./images/coronavirus.png"
+              alt="corona"
+          /></a>
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <i class="far fa-clock text-blue-primary icon-track"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <i class="fas fa-bars text-blue-primary icon-track"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <i class="fas fa-th-large text-blue-primary icon-track"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <i class="far fa-folder text-blue-primary icon-track"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <i class="fas fa-crop-alt text-blue-primary icon-track"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <i class="fas fa-random text-blue-primary icon-track"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <i
+                  class="fas fa-globe-americas text-blue-primary icon-track"
+                ></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <i class="far fa-comment-alt text-blue-primary icon-track"></i>
+              </a>
+            </li>
+          </ul>
+
+          <div class="d-flex flex-column btn-circle-content">
+            <card
+              class="btn-circle btn-circle-track bg-blue d-flex justify-content-center align-items-center"
+            >
+              <i class="fas fa-headset fs-4"></i>
+            </card>
+            <card
+              class="btn-circle btn-circle-track bg-green d-flex justify-content-center align-items-center"
+            >
+              <i class="fas fa-shopping-cart fs-4"></i>
+            </card>
+          </div>
+        </div>
+      </section>
+
+      <section class="nav-info bg-white">
+        <div class="d-flex flex-column" style="width: 25rem">
+          <h4 class="py-4 p-4 fw-bold fs-3">COVID-19 Tracker</h4>
+
+          <div class="total-cases p-3">
+            <div
+              class="card border-0 bg-tracker-pink p-3 mb-3 d-flex flex-row align-items-center justify-content-between total-case"
+            >
+              <p class="mb-0 me-4 text-blue-primary fw-bold">Total Case</p>
+              <span class="text-secondary letter-button-tracker"
+                >+145641544</span
+              >
+              <span class="fs-3 text-danger fw-bold">38784564</span>
+            </div>
+            <div
+              class="card border-0 bg-tracker-pink2 p-3 mb-3 d-flex flex-row align-items-center justify-content-between active-case"
+            >
+              <p class="mb-0 me-4 text-blue-primary fw-bold">Active Case</p>
+              <span class="fs-3 text-orange fw-bold">378574839</span>
+            </div>
+            <div
+              class="card border-0 bg-tracker-green p-3 mb-3 d-flex flex-row align-items-center justify-content-between recovered-case"
+            >
+              <p class="mb-0 me-4 text-blue-primary fw-bold">Recovered Case</p>
+              <span class="text-secondary letter-button-tracker">+0</span>
+              <span class="fs-3 text-success fw-bold">38745645</span>
+            </div>
+            <div
+              class="card border-0 bg-tracker-blue p-3 mb-3 d-flex flex-row align-items-center justify-content-between deaths-case"
+            >
+              <p class="mb-0 me-4 text-blue-primary fw-bold">Deaths Case</p>
+              <span class="text-secondary letter-button-tracker">+874545</span>
+              <span class="fs-3 text-primary fw-bold">38745645</span>
+            </div>
+          </div>
+          <div class="Top 10 Country p-3">
+            <h4 class="fs-3">Top 10 Country</h4>
+            <div
+              class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries"
+            >
+              <div
+                class="d-flex flex-row justify-content-center align-items-center"
+              >
+                <img
+                  class="img-countries me-2"
+                  src="./images/bandera_colombia.png"
+                  alt="fly"
+                />
+                <p class="mb-0">USA</p>
+              </div>
+              <div>
+                <p class="mb-0 text-blue-primary">546467644</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Script Boosttrap -->
     <script

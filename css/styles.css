@@ -20,10 +20,16 @@ transition: all 0.2s ease-in;
 
 /*------card_phone-------*/
 .app-wrapper {
-  background: linear-gradient(to right, #1e0c9d, #06cdec);
+  
   padding: 100px 130px;
   border-radius: 10px;
   margin-top: 100px;
+}
+
+.app-bg {
+    background: linear-gradient(to right, #1e0c9d, #06cdec);
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 .app-wrap h1 {
@@ -47,6 +53,20 @@ transition: all 0.2s ease-in;
   vertical-align: middle;
   border-style: none;
   width: auto;
+  transform: translateY(-13rem);
+}
+@media (max-width: 960px) {
+    .img-phone {
+        transform: translateY(1rem);
+    }
+    
+}
+
+.app-wrap-content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
 
 .section_news {
@@ -352,7 +372,7 @@ img {
 
 .btn-circle-content {
     position: fixed;
-    z-index: 99;
+    z-index: 1000;
     bottom: 1rem;
 }
 
@@ -371,7 +391,7 @@ img {
 }
 
 .btn-circle:hover {
-    transition: 0.5s ease-in;
+    transition: 0.2s ease-in;
     width: 10rem;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
@@ -394,7 +414,7 @@ img {
     background-color: var(--green);
 }
 .bg-gray-tracker {
-    background-color: #e1e1e1 !important;
+    background-color: aliceblue !important;
 }
 
 .banner {
@@ -583,6 +603,114 @@ img {
 /* Styles Traker */
 /* *********************************************************************** */
 .logo-traker {
-    height: 3.8rem;
-    width: 3.8rem;
+    height: 3.4rem;
+    width: 3.4rem;
+}
+
+.bar-tracker {
+    border-right: solid 0.12rem lightgrey;
+}
+
+.icon-track {
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem 1.3rem;
+}
+
+.icon-track:hover {
+    background-color: #3639AE;
+    color: white !important;
+}
+
+.btn-circle-track {
+    margin-left: 1.2rem;
+}
+
+.nav-info {
+    border-right: solid 0.12rem lightgrey;
+}
+.text-orange {
+    color: orange;
+}
+
+.bg-tracker-pink {
+    background-color:#fff2f2;
+}
+
+.bg-tracker-pink2 {
+    background-color: #fff9f1;
+}
+
+.bg-tracker-green {
+    background-color: #edffec;
+}
+
+.bg-tracker-blue {
+    background-color: #eefbff;
+}
+
+.letter-button-tracker {
+    font-size: 0.8rem !important;
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.img-countries {
+    width: 2.5rem;
+    height: 2rem;
+}
+
+.countries {
+    transition: all 0.1 ease-in;
+}
+
+.countries:hover {
+    transform: scale(1.030);
+    transition: all 0.1 ease-in;
+}
+
+.total-case {
+    transition: all 0.3 ease-in;
+}
+.total-case:hover {
+    border: solid 0.15rem red !important;
+    transform: scale(1.050);
+    transition: all 0.3 ease-in;
+}
+
+.active-case {
+    transition: all 0.3 ease-in;
+}
+
+.active-case:hover {
+    border: solid 0.15rem orange !important;
+    transform: scale(1.050);
+    transition: all 0.3 ease-in;
+}
+
+.recovered-case {
+    transition: all 0.3 ease-in;
+}
+
+.recovered-case:hover {
+    border: solid 0.15rem green !important;
+    transform: scale(1.050);
+    transition: all 0.3 ease-in;
+}
+
+.deaths-case {
+    transition: all 0.3 ease-in;
+}
+
+.deaths-case:hover {
+    border: solid 0.15rem blue !important;
+    transform: scale(1.050);
+    transition: all 0.3 ease-in;
+}
+
+@media(max-width: 1200px) {
+    .nav-info {
+        display: none;
+    }
 }
