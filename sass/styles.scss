@@ -1,4 +1,172 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+$blue_title: #121158;
+$blue_subtitle: #293f73;
+$spacer: 2rem;
+$spacer_card: 4rem;
+
+.title_wash {
+  font-family: "Poppins", sans-serif;
+  color: $blue_title;
+  padding-top: $spacer;
+}
+
+.subtitle_wash {
+  font-family: "Poppins", sans-serif;
+  color: $blue_subtitle;
+}
+
+.img_wash {
+  padding: $spacer;
+}
+
+/*------card_phone-------*/
+
+.app-wrapper {
+  background: linear-gradient(to right, #1e0c9d, #06cdec);
+  padding: 100px 130px;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.app-wrap h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.app-wrap p {
+  color: #eee;
+}
+
+.app-wrap .app-phone {
+  float: right;
+  position: absolute;
+}
+
+.img-phone {
+  vertical-align: middle;
+  border-style: none;
+  width: auto;
+}
+
+.section_news {
+  padding: 60px;
+}
+
+.title_news {
+  font-family: "Poppins", sans-serif;
+  color: $blue_title;
+  padding-top: 100px;
+}
+
+.subtitle_news {
+  color: $blue_subtitle;
+}
+
+.footer-wraper {
+  padding: 70px;
+  background-color: #1b2a4e;
+}
+.bottom-logo {
+  padding: 5px;
+  line-height: 30px;
+}
+
+.social-share a {
+  color: white;
+  width: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #293f73;
+}
+
+.social-share a:hover {
+  background-color: #fff;
+  transition: all 0.5s;
+  color: #1b2a4e;
+}
+
+.parrafo_footer {
+  font-size: 13px;
+  color: #8686b5;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 13px;
+  color: #8686b5;
+}
+
+span {
+  color: white;
+}
+
+.lower-footer {
+  background-color: #1b2a4e;
+}
+
+.widget-title {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.bottom-widget {
+  font-size: 13px;
+  color: #8686b5;
+  line-height: 1.75;
+}
+
+.bottom-widget li {
+  list-style: none;
+}
+
+.bottom-widget a {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: #8686b5;
+  line-height: 3;
+}
+
+.parrafo_news {
+  color: $blue_title;
+  font-weight: 700;
+}
+
+.item_news {
+  color: #3639ae;
+  font-weight: bold;
+}
+
+.card-body {
+  line-height: 3;
+}
+
+.post-meta {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.bi-chat-left {
+  color: gray;
+  padding-right: 10px;
+}
+.bi-stopwatch {
+  color: gray;
+  padding-right: 10px;
+}
+
+.item_new {
+  color: gray;
+}
+
+.mysass {
+  color: #007bff;
+}
 .spreads {
   margin-top: 5%;
 }
