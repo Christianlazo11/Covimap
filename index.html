@@ -30,13 +30,13 @@
   </head>
   <body>
     <header class="header mb-5">
-      <!-- <nav class="navbar navbar-expand-md navbar-dark p-3 sticky-top bg-dark"> -->
-      <div class="row container">
+      <div class="row">
         <nav
-          class="navbar navbar-expand-md navbar-dark p-3 fixed-top bg-dark col-12"
+          class="navbar navbar-expand-lg navbar-dark p-3 fixed-top col-12"
+          id="mynav"
         >
-          <div class="container-fluid">
-            <a href="#" class="navbar-brand logo">
+          <div class="container">
+            <a href="./index.html" class="navbar-brand logo nav-item-text">
               <img
                 class="rotate"
                 src="./images/coronavirus_white.png"
@@ -50,17 +50,17 @@
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#mynav"
-              aria-controls="mynav"
+              aria-controls="#mynav"
               aria-expanded="false"
               aria-label="Toogle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon text-dark"></span>
             </button>
             <div class="collapse navbar-collapse" id="mynav">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown me-4">
                   <a
-                    class="nav-link dropdown-toggle text-white"
+                    class="nav-link dropdown-toggle text-white nav-item-text"
                     data-bs-toggle="dropdown"
                     href="#"
                     role="button"
@@ -88,15 +88,19 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="">Prevention</a>
+                <li class="nav-item me-4">
+                  <a class="nav-link text-white nav-item-text" href=""
+                    >Prevention</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="">Qurantine</a>
+                <li class="nav-item me-4">
+                  <a class="nav-link text-white nav-item-text" href=""
+                    >Qurantine</a
+                  >
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown me-4">
                   <a
-                    class="nav-link dropdown-toggle text-white"
+                    class="nav-link dropdown-toggle text-white nav-item-text"
                     data-bs-toggle="dropdown"
                     href="#"
                     role="button"
@@ -112,14 +116,20 @@
                     <li><a class="dropdown-item" href="#">Blog Details</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="">About</a>
+                <li class="nav-item me-4">
+                  <a class="nav-link text-white nav-item-text" href="#"
+                    >About</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="">Help</a>
+                <li class="nav-item me-4">
+                  <a class="nav-link text-white nav-item-text" href="#">Help</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="">Tracker</a>
+                <li class="nav-item me-4">
+                  <a
+                    class="nav-link text-white btn bg-blue-primary btn-nav"
+                    href="./traker01.html"
+                    >Tracker</a
+                  >
                 </li>
               </ul>
             </div>
@@ -167,7 +177,11 @@
           <div
             class="col-sm-12 col-md-6 banner-left d-flex justify-content-center"
           >
-            <img src="./images/banner-right-image1.png" alt="sick" />
+            <img
+              class="img-fluit"
+              src="./images/banner-right-image1.png"
+              alt="sick"
+            />
           </div>
         </div>
       </div>
@@ -176,7 +190,7 @@
     <!-- Section Symptom start -->
     <section class="symptom mt-5 mb-5 container">
       <h3 class="text-center fs-5">Symptom</h3>
-      <h2 class="text-center display-4 fw-bold">
+      <h2 class="text-center display-4 fw-bold text-blue-dark">
         Basic Symptom Against Corona virus
       </h2>
       <div class="symptom-cards-content mt-5 row">
@@ -186,8 +200,10 @@
               <img src="./images/fever.svg" alt="banner-img" />
             </div>
 
-            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
-            <p class="mb-3 text-center">
+            <h3 class="fw-bold mb-3 text-center text-blue-primary">
+              Anches and pains
+            </h3>
+            <p class="mb-3 text-center text-blue-secondary">
               Fever you feel hot to touch on your chest or back you do not need
               to measure your temperature. It is also may appear in 2-10 days.
             </p>
@@ -199,8 +215,10 @@
               <img src="./images/cough.svg" alt="banner-img" />
             </div>
 
-            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
-            <p class="mb-3 text-center">
+            <h3 class="fw-bold mb-3 text-center text-blue-primary">
+              Anches and pains
+            </h3>
+            <p class="mb-3 text-center text-blue-secondary">
               Continuous coughing a lot for more than an hour, or 3 or more
               coughing episodes in 24 hours. if you usually have a cough, it may
               be worse than usual.
@@ -213,8 +231,10 @@
               <img src="./images/breathing.svg" alt="banner-img" />
             </div>
 
-            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
-            <p class="mb-3 text-center">
+            <h3 class="fw-bold mb-3 text-center text-blue-primary">
+              Anches and pains
+            </h3>
+            <p class="mb-3 text-center text-blue-secondary">
               Around 1 out of every 6 people who gets COVID-19 becomes seriously
               ill and develops difficulty breathing or shortness of breath a
               lot.
@@ -227,8 +247,10 @@
               <img src="./images/banner-right.png" alt="banner-img" />
             </div>
 
-            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
-            <p class="mb-3 text-center">
+            <h3 class="fw-bold mb-3 text-center text-blue-primary">
+              Anches and pains
+            </h3>
+            <p class="mb-3 text-center text-blue-secondary">
               Fever is a key symptom, experts say. Don't fixate on a number, but
               khow it's really not a fever until your temperature reaches at
               least 100
@@ -241,8 +263,10 @@
               <img src="./images/cough.svg" alt="banner-img" />
             </div>
 
-            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
-            <p class="mb-3 text-center">
+            <h3 class="fw-bold mb-3 text-center text-blue-primary">
+              Anches and pains
+            </h3>
+            <p class="mb-3 text-center text-blue-secondary">
               People of all ages who experience fever and/or cough associated
               withdifficulty breathing/shortness of breath
             </p>
@@ -254,8 +278,10 @@
               <img src="./images/breathing.svg" alt="banner-img" />
             </div>
 
-            <h3 class="fw-bold mb-3 text-center">Anches and pains</h3>
-            <p class="mb-3 text-center">
+            <h3 class="fw-bold mb-3 text-center text-blue-primary">
+              Anches and pains
+            </h3>
+            <p class="mb-3 text-center text-blue-secondary">
               Older people, and those with underlying medical problems like high
               blood pressure, heart and lung problems, diabetes, or cancer
             </p>
@@ -267,46 +293,126 @@
     <!-- Section Prevent start -->
     <section class="prevent mt-5">
       <div class="container">
-        <h4 class="text-center fs-5">Prevent</h4>
-        <h2 class="text-center display-3 fw-bold mb-5">
+        <h4 class="text-center pt-5 fs-5">Prevent</h4>
+        <h2 class="text-center display-3 fw-bold mb-5 text-blue-dark">
           Best way to prevent is avoid virus.
         </h2>
-        <div class="prevent-cards-content row mt-5">
-          <!-- Card start -->
+      </div>
+      <div class="container">
+        <div class="row d-flex justify-content-center">
           <div
-            class="card col-sm-12 col-md-6 p-2 prevent-card bg-transparent h-100"
+            class="card col-12 col-sm-6 col-md-6 col-lg-4 p-3 bg-transparent border-0"
           >
-            <div class="card d-flex flex-row bg-transparent border-0">
-              <div class="prevent-card-img">
-                <img src="./images/icon2.png" alt="images" />
-              </div>
-              <div
-                class="prevent-card-text d-flex justify-content-center align-items-center"
-              >
-                <p class="text-center">
+            <div
+              class="card d-flex flex-row flex-wrap flex-sm-wrap flex-md-wrap flex-lg-nowrap align-items-center justify-content-center p-2 border-0 bg-transparent"
+            >
+              <img class="p-2" src="./images/icon2.png" alt="icon" />
+              <div>
+                <h4 class="text-center text-blue-primary fw-bold">
+                  Personal Contact
+                </h4>
+                <p class="text-center text-blue-secondary">
                   Fever is a key symptom, experts say. Don't fixate on a number,
                   but know it's really not a fever until your temperature
+                  reaches at least100
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-12 col-sm-6 col-md-6 col-lg-4 p-3 bg-transparent border-0"
+          >
+            <div
+              class="card col-12 d-flex flex-row flex-wrap flex-sm-wrap flex-md-wrap flex-lg-nowrap align-items-center justify-content-center p-2 border-0 bg-transparent"
+            >
+              <img class="p-2" src="./images/icon4.png" alt="icon" />
+              <div>
+                <h4 class="text-center text-blue-primary fw-bold">
+                  Wash hands
+                </h4>
+                <p class="text-center text-blue-secondary">
+                  Maintain at least 1 metre 3feet distance between yourself &
+                  anyone who is coughing or sneezing. if you are too close, get
+                  chance to infected
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-12 col-sm-6 col-md-6 col-lg-4 p-3 bg-transparent border-0"
+          >
+            <div
+              class="card d-flex flex-row flex-wrap flex-sm-wrap flex-md-wrap flex-lg-nowrap align-items-center justify-content-center p-2 border-0 bg-transparent"
+            >
+              <img class="p-2" src="./images/icon5.png" alt="icon" />
+              <div>
+                <h4 class="text-center text-blue-primary fw-bold">
+                  Social distancing
+                </h4>
+                <p class="text-center text-blue-secondary">
+                  Hands touch many surfaces and can pick up viruses. So, hands
+                  can transfer the virus to your ayes, nose or mouth and can
+                  make you sick
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-12 col-sm-6 col-md-6 col-lg-4 p-3 bg-transparent border-0"
+          >
+            <div
+              class="card d-flex flex-row flex-wrap flex-sm-wrap flex-md-wrap flex-lg-nowrap align-items-center justify-content-center p-2 border-0 bg-transparent"
+            >
+              <img class="p-2" src="./images/breathing.svg" alt="icon" />
+              <div>
+                <h4 class="text-center text-blue-primary fw-bold">
+                  Respiratory hygiene
+                </h4>
+                <p class="text-center text-blue-secondary">
+                  Maintain good respiratory hygiene as covering your mouth &
+                  nose witch your bent elbow or tissue when cough or sneeze
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-12 col-sm-6 col-md-6 col-lg-4 p-3 bg-transparent border-0"
+          >
+            <div
+              class="card d-flex flex-row flex-wrap flex-sm-wrap flex-md-wrap flex-lg-nowrap align-items-center justify-content-center p-2 border-0 bg-transparent"
+            >
+              <img class="p-2" src="./images/icon6.png" alt="icon" />
+              <div>
+                <h4 class="text-center text-blue-primary fw-bold">
+                  Clean And Disinfect
+                </h4>
+                <p class="text-center text-blue-secondary">
+                  Fever is a key symptom, experts say. Don't fixate on a number,
+                  but khow it's really not a fever until your temperature
                   reaches at least 100
                 </p>
               </div>
             </div>
           </div>
-          <!-- Card End -->
-          <!-- Card start -->
+
           <div
-            class="card col-sm-12 col-md-6 p-2 prevent-card bg-transparent h-100"
+            class="card col-12 col-sm-6 col-md-6 col-lg-4 p-3 bg-transparent border-0"
           >
-            <div class="card d-flex flex-row bg-transparent border-0">
-              <div class="prevent-card-img">
-                <img src="./images/icon2.png" alt="images" />
-              </div>
-              <div
-                class="prevent-card-text d-flex justify-content-center align-items-center"
-              >
-                <p class="text-center">
-                  Fever is a key symptom, experts say. Don't fixate on a number,
-                  but know it's really not a fever until your temperature
-                  reaches at least 100
+            <div
+              class="card d-flex flex-row flex-wrap flex-sm-wrap flex-md-wrap flex-lg-nowrap align-items-center justify-content-center p-2 border-0 bg-transparent"
+            >
+              <img class="p-2" src="./images/banner-right.png" alt="icon" />
+              <div>
+                <h4 class="text-center text-blue-primary fw-bold">
+                  Wear a Facemask
+                </h4>
+                <p class="text-center text-blue-secondary">
+                  Our Comprehensive Online Marketing strategy will boost your
+                  website trafic hence monthly sales
                 </p>
               </div>
             </div>
@@ -438,7 +544,7 @@
           </div>
         </div>
         <div class="row mt-5">
-          <div class="col-lg-6 has-animation" data-delay="0">
+          <div class="col-lg-6 has-animation mypanel" data-delay="0">
             <div
               class="panel-group"
               id="accordion"
@@ -461,7 +567,7 @@
                   </h4>
                 </div>
                 <div id="">
-                  <div class="panel-body" id="1">
+                  <div class="panel-body active" id="1">
                     <p>
                       Data has shown that it spreads from person to person among
                       those in close contact (within about 6 feet, or 2 meters).
@@ -607,7 +713,7 @@
                   </h4>
                 </div>
                 <div>
-                  <div class="panel-body" id="6">
+                  <div class="panel-body active" id="6">
                     <p>
                       While some western, traditional or home remedies may
                       provide comfort and alleviate symptoms of mild COVID-19,
@@ -637,6 +743,83 @@
     <footer></footer>
     <!-- Section Footer Ends -->
 
+    <!-- Sections new Banner 02 -->
+    <!-- <section class="news bg-dark">
+      <div class="mycontainer mt-5 row">
+        <div class="col-12 col-md-4 col-lg-12 row mb-5 mt-5">
+          <div
+            class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row"
+          >
+            <div class="col-3">
+              <img src="./images/blog-1.jpg" alt="covirds" />
+            </div>
+            <div class="col-7">
+              <div class="d-flex flex-row">
+                <p class="text-white">9 Sept 2020</p>
+                <p class="text-white">21 Comment</p>
+              </div>
+              <div class="text-white">
+                <h4 class="text-center">
+                  Can Covid-19 be caught from a person who has no symptoms?
+                </h4>
+              </div>
+            </div>
+            <div class="col-2 fw-bold">
+              <p class="text-decoration text-white">Continue</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-12 row mb-5">
+          <div
+            class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row"
+          >
+            <div class="col-3">
+              <img src="./images/blog-1.jpg" alt="covirds" />
+            </div>
+            <div class="col-7">
+              <div class="d-flex flex-row">
+                <p class="text-white">9 Sept 2020</p>
+                <p class="text-white">21 Comment</p>
+              </div>
+              <div class="text-white">
+                <h4 class="text-center">
+                  Can Covid-19 be caught from a person who has no symptoms?
+                </h4>
+              </div>
+            </div>
+            <div class="col-2 fw-bold">
+              <p class="text-decoration text-white">Continue</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-12 row mb-5">
+          <div
+            class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row"
+          >
+            <div class="col-3">
+              <img src="./images/blog-1.jpg" alt="covirds" />
+            </div>
+            <div class="col-7">
+              <div class="d-flex flex-row">
+                <p class="text-white">9 Sept 2020</p>
+                <p class="text-white">21 Comment</p>
+              </div>
+              <div class="text-white">
+                <h4 class="text-center">
+                  Can Covid-19 be caught from a person who has no symptoms?
+                </h4>
+              </div>
+            </div>
+            <div class="col-2 fw-bold">
+              <p class="text-decoration text-white">Continue</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Sections new Banner 02 -->
     <!-- Script Local -->
     <script src="/js/main.js"></script>
 

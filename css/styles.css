@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    transition: all 0.2s ease-in;
+}
+
 .spreads {
   margin-top: 5%;
 }
@@ -79,6 +84,19 @@ body {
     font-family: 'Poppins', sans-serif;
     background: aliceblue;
 }
+
+.bg-blue-primary {
+    background-color: #3639AE !important;
+}
+.text-blue-primary {
+    color: #3639AE !important;
+}
+.text-blue-secondary {
+    color: #673BB7 !important;
+}
+.text-blue-dark {
+    color: #262F5A !important;
+}
 .front {
     z-index: 100;
 }
@@ -89,6 +107,21 @@ body {
     background-repeat: no-repeat;
     position: relative;
 }
+
+.btn-nav {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+}
+
+#mynav {
+    transition: all 0.3s ease-in;
+}
+
+
 /* .header ::before {
     position: absolute;
     left:0;
@@ -117,12 +150,12 @@ body {
 }
 @media (max-width: 768px) {
     .header {
-        height: 1400px;
+        height: 1200px;
     }
 }
 @media (max-width: 450px) {
     .header {
-        height: 1200px;
+        height: 1100px;
     }
 }
 img {
@@ -200,6 +233,9 @@ img {
 .bg-green {
     background-color: var(--green);
 }
+.bg-gray-tracker {
+    background-color: #e1e1e1 !important;
+}
 
 .banner {
     padding-top: 10rem;
@@ -209,6 +245,23 @@ img {
     height: 55%;
     width: auto;
 }
+@media(max-width: 640px) {
+    .banner-left img {
+        margin-top: 2rem;
+    }
+}
+/* @media (mix-width:1440px) {
+    .banner-left img {
+        height: 55% !important;
+        width: auto;
+    }
+}
+@media (max-height: 990px) {
+    .banner-left img {
+        height: 45%;
+        width: auto;
+    }
+} */
 .symptom img {
     width: auto;
 }
@@ -251,8 +304,9 @@ img {
     background-color: white;
 }
 
-.prevent-card-img img {
-    height: 7rem;
+.prevent img {
+    height: 8rem;
+    width: 7rem;
 }
 
 
@@ -338,6 +392,7 @@ img {
   border: 1px rgba(255, 255, 255, 0.2) solid;
   border-radius: 10px;
   margin-bottom: 20px;
+  transition: all 0.4s linear !important;
 }
 
 .panel-title a {
@@ -361,4 +416,13 @@ img {
   display: none;
 }
 
+
 /*# sourceMappingURL=styles.css.map */
+
+/* *********************************************************************** */
+/* Styles Traker */
+/* *********************************************************************** */
+.logo-traker {
+    height: 3.8rem;
+    width: 3.8rem;
+}
