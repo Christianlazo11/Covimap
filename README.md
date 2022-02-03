@@ -19,6 +19,13 @@ No se necesita ningun programa o elemento externo. Con solo visitar el link del 
 
 [![Sin-t-tulo-removebg-preview.png](https://i.postimg.cc/BbvSsxs2/Sin-t-tulo-removebg-preview.png)](https://postimg.cc/qh9Vx6N7)
 
+## Construido con 🛠️
+* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Libreria web usada 
+* [Disiase.sh](https://corona.lmao.ninja/) - API utilizada para la recolección de datos 
+* [Sass](https://sass-lang.com/) - Preprocesador 
+* [Html]() - Preprocesador
+*  
+
 
 
 
