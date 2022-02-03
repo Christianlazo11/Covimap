@@ -25,7 +25,6 @@
   padding: 100px 130px;
   border-radius: 10px;
   margin-top: 100px;
-  background: linear-gradient(to right, #1e0c9d, #06cdec);
   padding: 100px 130px;
   border-radius: 10px;
   margin-top: 100px;
@@ -58,7 +57,7 @@
   vertical-align: middle;
   border-style: none;
   width: auto;
-  transform: translateY(-13rem);
+  transform: translateY(-9rem);
 }
 @media (max-width: 960px) {
     .img-phone {
@@ -68,9 +67,9 @@
 }
 
 .app-wrap-content {
-    vertical-align: middle;
-    border-style: none;
-    width: auto;
+   display: flex;
+   flex-direction: column;
+   padding: 1rem 4rem 4rem 4rem;
 }
 
 .section_news {
