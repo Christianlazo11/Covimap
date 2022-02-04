@@ -161,27 +161,33 @@
         </div> -->
       </section>
 
-      <section class="track01 bg-warning w-100 p-3" id="track01">
-        <!-- <div class="card">
+      <section class="track01 bg-gray-tracker w-100 p-4" id="track02">
+        <div class="card p-2 pt-3 pb-1 mt-2 border-0 border-bottom">
+          <h1 class="fs-4 ms-2">Ajax Data Table - Covid-19 Country Wise State</h1>
+        </div>
+        
+        <div class="card border-0 bg-white p-3 vh-100">
           <div
-            class="d-flex flex-row justify-content-between align-items-center"
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
           >
             <div class="">
               <div class="form-group">
-                  <select name="" id="select_countries" class="btn" onchange="khowCountry()">
-                      
+                  <span class="me-2 text-dark ">Show</span>
+                  <select name="" id="select_countries" class="btn btn-outline-secondary bg-white me-2 text-dark" onchange="khowCountry()">
+                    <option value="10">10</option>  
+                    <option value="25">25</option>  
+                    <option value="50">50</option>  
+                    <option value="100">100</option>  
                   </select>
+                  <span class="text-dark">Entries</span>
               </div>
             </div>
-            <div>
-              <p>Fecha</p>
+            <div class="form-group">
+              <span class="text-dark">Search:</span>
+              <input type="text" class="rounded border-1 p-2">
             </div>
           </div>
         </div>
-
-        <div class="card" id="cardCountry">
-
-        </div> -->
       </section>
     </main>
 

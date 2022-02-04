@@ -1,3 +1,30 @@
+// Esta sera la funcion que se llamara al iniciar la aplicación en este caso pintara los datos de afghanistan
+window.onload = () => {
+  InitialCountry();
+};
+function InitialCountry() {
+  fetch(`${url}/Afghanistan`)
+    .then((response) => response.json())
+    .then((data) => {
+      printDataCountry(data);
+    });
+}
+
+const months = {
+  1: "January",
+  2: "February",
+  3: "March",
+  4: "April",
+  5: "May",
+  6: "June",
+  7: "July",
+  8: "August",
+  9: "September",
+  10: "October",
+  11: "November",
+  12: "December",
+};
+
 // Metodos para Realizar la petición a la api y asi poder pintar los datos en el html
 
 //Obtenemos la barra lateral superior
@@ -6,9 +33,15 @@ const bar_lateral = document.getElementById("barra_info_superior");
 const barra_paises = document.getElementById("barra_paises");
 //Obtenmos
 const selectCountries = document.getElementById("select_countries");
+const update = document.getElementById("update");
 
 //Creamos una url de donde vamos a obtener los paises
 const url = "https://disease.sh/v3/covid-19/countries";
+
+let totalCaseGlobal = 0;
+let totalRecoveredGlobal = 0;
+let totalDeathsglobal = 0;
+let totalNewDeathsGlobal = 0;
 
 //Realizamos la petición para obtener los datos
 fetch(url)
@@ -45,6 +78,12 @@ function pintarBarra(data) {
     deathCaseToday += data[i].todayDeaths;
   }
 
+  //Estas Variables Globales las usamos para poder acceder desde otras funciones a estos valores
+  totalCaseGlobal = totalCase;
+  totalRecoveredGlobal = recoveredCase;
+  totalDeathsglobal = deathCase;
+  totalNewDeathsGlobal = deathCaseToday;
+
   bar_sup = `<div
   class="card border-0 bg-tracker-pink p-3 mb-3 d-flex flex-row align-items-center justify-content-between total-case"
 >
@@ -74,10 +113,20 @@ function pintarBarra(data) {
   <span class="text-secondary letter-button-tracker">+${deathCaseToday}</span>
   <span class="fs-3 text-primary fw-bold">${deathCase}</span>
 </div>`;
+
+  //Creamos las varialbes para obtener la fecha actual
+  let today = new Date();
+  let todayDate =
+    months[today.getMonth() + 1] +
+    " " +
+    today.getDate() +
+    "," +
+    today.getFullYear();
   //le pasamos los datos para agregarlos al Dom
   bar_lateral.innerHTML = bar_sup;
   pintarPaises(data);
   getCountries(arrayCountries);
+  printDate(todayDate);
 }
 
 function pintarPaises(data) {
@@ -120,7 +169,7 @@ function getCountries(data) {
 
   selectCountries.innerHTML = textCountries;
 }
-//Esta funcion la utilizamos para obtener el pais
+//Esta funcion la utilizamos para obtener el pais y toda su información
 function khowCountry() {
   fetch(`${url}/${selectCountries.value}`)
     .then((response) => response.json())
@@ -129,17 +178,147 @@ function khowCountry() {
     });
 }
 
-//Esta funciona la usamos para crear el html y agregarlo a la pagina por medio del innerHtml
+//Esta funcion la usamos para crear el html y agregarlo a la pagina por medio del innerHtml en este caso es toda la informacion del pais
 function printDataCountry(data) {
   const cardC = document.getElementById("cardCountry");
-  let body = `<div class="card">
-        <h3>Total Cases</h3>
-        <p>${data.cases}</p>
-    </div> <div class="card">
-    <h3>Total Deaths</h3>
-    <p>${data.deaths}</p>
-    </div>`;
+  let body = `<div class="row h-100  ">
+  <div class="col-12 col-md-12 col-lg-6">
+    <div class="row">
+      <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3 ">
+        <div class="card border-0 card-total-cases p-2">
+          <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+            <h7 class="ms-2 fs-5">Total Cases</h7>
+          </div>
+          <div class="d-flex justify-content-start align-items-center p-2">
+            <p class=" ms-2 fs-2 mb-0 fw-bold text-blue-primary">${data.cases}</p>
+          </div>
+          <img src="./images/icons/covid-blue.svg" alt="covis">
+        </div>
+      </div>
+
+      <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3 ">
+        <div class="card border-0 card-total-cases p-2">
+          <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+            <h7 class="ms-2 fs-5">Total Deaths</h7>
+          </div>
+          <div class="d-flex justify-content-start align-items-center p-2">
+            <p class=" ms-2 fs-2 mb-0 fw-bold text-danger">${data.deaths}</p>
+          </div>
+          <img src="./images/icons/covid-red.svg" alt="covis">
+        </div>
+      </div>
+
+      <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3">
+        <div class="card border-0 card-total-cases p-2">
+          <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+            <h7 class="ms-2 fs-5">Total Recovered</h7>
+          </div>
+          <div class="d-flex justify-content-start align-items-center p-2">
+            <p class=" ms-2 fs-2 mb-0 fw-bold text-success">${data.recovered}</p>
+          </div>
+          <img src="./images/icons/covid-green.svg" alt="covis">
+        </div>
+      </div>
+
+      <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3">
+        <div class="card border-0 card-total-cases p-2">
+          <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+            <h7 class="ms-2 fs-5">Total Active</h7>
+          </div>
+          <div class="d-flex justify-content-start align-items-center p-2">
+            <p class=" ms-2 fs-2 mb-0 fw-bold text-primary">${data.active}</p>
+          </div>
+          <img src="./images/icons/covid-blue.svg" alt="covis">
+        </div>
+      </div>
+
+      <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3">
+        <div class="card border-0 card-total-cases p-2">
+          <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+            <h7 class="ms-2 fs-5">New Cases</h7>
+          </div>
+          <div class="d-flex justify-content-start align-items-center p-2">
+            <p class=" ms-2 fs-2 mb-0 fw-bold text-orange">0</p>
+          </div>
+          <img src="./images/icons/covid-orange.svg" alt="covis">
+        </div>
+      </div>
+
+      <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3">
+        <div class="card border-0 card-total-cases p-2">
+          <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+            <h7 class="ms-2 fs-5">New Deaths</h7>
+          </div>
+          <div class="d-flex justify-content-start align-items-center p-2">
+            <p class=" ms-2 fs-2 mb-0 fw-bold text-darkred">0</p>
+          </div>
+          <img src="./images/icons/covid-redark.svg" alt="covis">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-12 col-lg-6 bg-danger">
+    <p>Mapa</p>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-12 row">
+    <div class="card col-6 col-md-3 border-0 card-animation02">
+      <div class="card row d-flex flex-row pt-4 pb-4 border-0 border-end">
+        <div class="col-4">
+          <img src="./images/icons/covid-defult.svg" alt="covis">
+        </div>
+        <div class="col-8">
+          <p class="mb-0">Confirmed</p>
+          <p class="fs-5 mb-0 text-blue-primary fw-bold">${totalCaseGlobal}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card col-6 col-md-3 border-0 card-animation02">
+      <div class="card row d-flex flex-row pt-4 pb-4 border-0 border-end">
+        <div class="col-4">
+          <img src="./images/icons/covid-green.svg" alt="covis">
+        </div>
+        <div class="col-8">
+          <p class="mb-0">Recovered</p>
+          <p class="fs-5 mb-0 text-blue-primary fw-bold">${totalRecoveredGlobal}</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card col-6 col-md-3 border-0 card-animation02">
+      <div class="card row d-flex flex-row pt-4 pb-4 border-0 border-end">
+        <div class="col-4">
+          <img src="./images/icons/covid-red.svg" alt="covis">
+        </div>
+        <div class="col-8">
+          <p class="mb-0">Deaths</p>
+          <p class="fs-5 mb-0 text-blue-primary fw-bold">${totalDeathsglobal}</p>
+        </div>
+      </div>
+    </div>
+    <div class="card col-6 col-md-3 border-0 card-animation02">
+      <div class="card row d-flex flex-row pt-4 pb-4 border-0 border-end">
+        <div class="col-4">
+          <img src="./images/icons/covid-redark.svg" alt="covis">
+        </div>
+        <div class="col-8">
+          <p class="mb-0">New Deaths</p>
+          <p class="fs-5 mb-0 text-blue-primary fw-bold">${totalNewDeathsGlobal}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
 
   //Agreamos los datos al dom del html
-  // cardC.innerHTML = body;
+  cardC.innerHTML = body;
+}
+
+function printDate(data) {
+  console.log(data);
+  let body = `<p class="mb-0 text-dark fst-italic">Update:   <span class="text-dark">${data}</span></p> `;
+  update.innerHTML = body;
 }
