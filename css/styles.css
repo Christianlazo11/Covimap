@@ -696,7 +696,7 @@ img {
 
 .countries:hover {
     transform: scale(1.030);
-    transition: all 0.1 ease-in;
+    transition: all 0.3 ease-in;
 }
 
 .total-case {

@@ -1,3 +1,4 @@
+//Metodos y variables para mostrar las preguntas frecuentes
 const panel = document.querySelectorAll(".boton");
 
 panel.forEach((p) => {
@@ -11,6 +12,7 @@ function showText(p) {
   data.classList.toggle("active");
 }
 
+// Metodos y variables para cambiar el color de la barra de navegación y sus enlaces
 const nav = document.getElementById("mynav");
 const navItems = document.querySelectorAll(".nav-item-text");
 const logo = document.querySelector(".rotate");
