@@ -798,6 +798,10 @@ img {
     animation: rotation 6s infinite linear;
 }
 
+.card-animation02 img {
+    height: 3.5rem;
+}
+
 
 
 /*--------styles-track-03---------*/

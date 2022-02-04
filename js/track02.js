@@ -46,7 +46,9 @@ function pintarBarra(data) {
     deathCaseToday += data[i].todayDeaths;
 
     body_table += `<tr>
-    <td><img src="${data[i].countryInfo.flag}" /></td>
+    <td><img src="${
+      data[i].countryInfo.flag
+    }" style="height: 1rem; width:2rem;"/></td>
     <td>${data[i].country}</td>
     <td>${data[i].cases}</td>
     <td>${0} </td>
