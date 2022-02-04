@@ -103,3 +103,7 @@ function pintarPaises(data) {
   }
   barra_paises.innerHTML = countries;
 }
+
+
+
+
