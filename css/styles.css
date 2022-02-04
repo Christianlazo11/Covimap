@@ -22,12 +22,12 @@
 /*------card_phone-------*/
 
 .app-wrapper {
-  padding: 100px 130px;
-  border-radius: 10px;
-  margin-top: 100px;
-  padding: 100px 130px;
-  border-radius: 10px;
-  margin-top: 100px;
+    padding: 100px 130px;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 100px 130px;
+    border-radius: 10px;
+    margin-top: 100px;
 }
 
 .app-bg {
@@ -54,22 +54,22 @@
 }
 
 .img-phone {
-  vertical-align: middle;
-  border-style: none;
-  width: auto;
-  transform: translateY(-9rem);
+    vertical-align: middle;
+    border-style: none;
+    width: auto;
+    transform: translateY(-9rem);
 }
+
 @media (max-width: 960px) {
     .img-phone {
         transform: translateY(1rem);
     }
-    
 }
 
 .app-wrap-content {
-   display: flex;
-   flex-direction: column;
-   padding: 1rem 4rem 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem 4rem 4rem;
 }
 
 .section_news {
@@ -210,10 +210,6 @@ span {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     box-shadow: 0px 30px 60px rgba(132, 132, 167, 0.45);
-}
-
-img {
-    height: 100%;
     width: 100%;
 }
 
@@ -658,15 +654,17 @@ img {
 .nav-info {
     border-right: solid 0.12rem lightgrey;
 }
+
 .text-orange {
     color: orange;
 }
+
 .text-darkred {
     color: darkred;
 }
 
 .bg-tracker-pink {
-    background-color:#fff2f2;
+    background-color: #fff2f2;
 }
 
 .bg-tracker-pink2 {
@@ -709,6 +707,7 @@ img {
 .total-case {
     transition: all 0.3 ease-in;
 }
+
 .total-case:hover {
     border: solid 0.15rem red !important;
     transform: scale(1.050);
@@ -766,15 +765,15 @@ img {
     z-index: 2;
 }
 
-.card-total-cases img{
-  width: 8.5rem;
-  height: 8.5rem;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
-  opacity: 0.15;
-  transform: translate(1.5rem, -2rem);
+.card-total-cases img {
+    width: 8.5rem;
+    height: 8.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.15;
+    transform: translate(1.5rem, -2rem);
 }
 
 .card-total-cases img:hover {
@@ -786,6 +785,7 @@ img {
 }
 
 
+<<<<<<< HEAD
 
 /*--------styles-track-03---------*/
 
@@ -868,4 +868,47 @@ img {
 .text_track{
     font-size: .6rem;
     float: left;
+=======
+/*Estilos tracker 5*/
+
+.bandera {
+    border-radius: 15%;
+}
+
+.blue {
+    color: #3639AE!important;
+}
+
+.red {
+    color: #ff0000 !important;
+}
+
+.green {
+    color: #82c519 !important;
+}
+
+.purple {
+    color: #673BB7 !important;
+}
+
+.orange {
+    color: #ff6a07 !important;
+}
+
+.light-blue {
+    color: #2c6dff !important;
+}
+
+.subt {
+    font-size: 12px;
+}
+
+.f-w {
+    font-weight: 800;
+}
+
+.square {
+    width: 100%;
+    background-color: #20c997;
+>>>>>>> ac224b6593ef6e74164940a421e9d74c68099829
 }
