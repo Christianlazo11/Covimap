@@ -661,6 +661,9 @@ img {
 .text-orange {
     color: orange;
 }
+.text-darkred {
+    color: darkred;
+}
 
 .bg-tracker-pink {
     background-color:#fff2f2;
@@ -676,6 +679,10 @@ img {
 
 .bg-tracker-blue {
     background-color: #eefbff;
+}
+
+.bg-aliceblue {
+    background-color: aliceblue;
 }
 
 .letter-button-tracker {
@@ -742,4 +749,38 @@ img {
     .nav-info {
         display: none;
     }
+}
+
+.card-animation {
+    transition: all 0.5 ease-in;
+}
+
+.card-animation:hover {
+    transform: translateY(-0.5rem);
+    transition: all 0.5 ease-in;
+}
+
+.card-total-cases {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card-total-cases img{
+  width: 8.5rem;
+  height: 8.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0.15;
+  transform: translate(1.5rem, -2rem);
+}
+
+.card-total-cases img:hover {
+    animation: rotation 6s infinite linear;
+}
+
+.card-animation02:hover img {
+    animation: rotation 6s infinite linear;
 }

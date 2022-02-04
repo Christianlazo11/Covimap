@@ -141,5 +141,5 @@ function printDataCountry(data) {
     </div>`;
 
   //Agreamos los datos al dom del html
-  cardC.innerHTML = body;
+  // cardC.innerHTML = body;
 }
