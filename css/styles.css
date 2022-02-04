@@ -210,10 +210,6 @@ span {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     box-shadow: 0px 30px 60px rgba(132, 132, 167, 0.45);
-}
-
-img {
-    height: 100%;
     width: 100%;
 }
 
@@ -662,6 +658,7 @@ img {
 .text-orange {
     color: orange;
 }
+
 .text-darkred {
     color: darkred;
 }
@@ -768,15 +765,15 @@ img {
     z-index: 2;
 }
 
-.card-total-cases img{
-  width: 8.5rem;
-  height: 8.5rem;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
-  opacity: 0.15;
-  transform: translate(1.5rem, -2rem);
+.card-total-cases img {
+    width: 8.5rem;
+    height: 8.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.15;
+    transform: translate(1.5rem, -2rem);
 }
 
 .card-total-cases img:hover {
@@ -785,4 +782,48 @@ img {
 
 .card-animation02:hover img {
     animation: rotation 6s infinite linear;
+}
+
+
+/*Estilos tracker 5*/
+
+.bandera {
+    border-radius: 15%;
+}
+
+.blue {
+    color: #3639AE!important;
+}
+
+.red {
+    color: #ff0000 !important;
+}
+
+.green {
+    color: #82c519 !important;
+}
+
+.purple {
+    color: #673BB7 !important;
+}
+
+.orange {
+    color: #ff6a07 !important;
+}
+
+.light-blue {
+    color: #2c6dff !important;
+}
+
+.subt {
+    font-size: 12px;
+}
+
+.f-w {
+    font-weight: 800;
+}
+
+.square {
+    width: 100%;
+    background-color: #20c997;
 }
