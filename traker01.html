@@ -41,44 +41,44 @@
           /></a>
           <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="#" class="nav-link">
                 <i class="far fa-clock text-blue-primary icon-track"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./tracker02.html" class="nav-link">
                 <i class="fas fa-bars text-blue-primary icon-track"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./tracker03.html" class="nav-link">
                 <i class="fas fa-th-large text-blue-primary icon-track"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./tracker04.html" class="nav-link">
                 <i class="far fa-folder text-blue-primary icon-track"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./tracker05.html" class="nav-link">
                 <i class="fas fa-crop-alt text-blue-primary icon-track"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./tracker06.html" class="nav-link">
                 <i class="fas fa-random text-blue-primary icon-track"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./tracker07.html" class="nav-link">
                 <i
                   class="fas fa-globe-americas text-blue-primary icon-track"
                 ></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./tracker08.html" class="nav-link">
                 <i class="far fa-comment-alt text-blue-primary icon-track"></i>
               </a>
             </li>
@@ -101,10 +101,10 @@
 
       <section class="nav-info bg-white">
         <div class="d-flex flex-column" style="width: 25rem">
-          <h4 class="py-4 p-4 fw-bold fs-3">COVID-19 Tracker</h4>
+          <h4 class="py-4 p-4 pb-0 fw-bold fs-3">COVID-19 Tracker</h4>
 
-          <div class="total-cases p-3">
-            <div
+          <div class="total-cases p-3" id="barra_info_superior">
+            <!-- <div
               class="card border-0 bg-tracker-pink p-3 mb-3 d-flex flex-row align-items-center justify-content-between total-case"
             >
               <p class="mb-0 me-4 text-blue-primary fw-bold">Total Case</p>
@@ -132,10 +132,14 @@
               <p class="mb-0 me-4 text-blue-primary fw-bold">Deaths Case</p>
               <span class="text-secondary letter-button-tracker">+874545</span>
               <span class="fs-3 text-primary fw-bold">38745645</span>
-            </div>
+            </div> -->
           </div>
           <div class="Top 10 Country p-3">
             <h4 class="fs-3">Top 10 Country</h4>
+            <div class="p-3" id="barra_paises">
+
+            </div>
+            <!-- <h4 class="fs-3">Top 10 Country</h4>
             <div
               class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries"
             >
@@ -154,6 +158,159 @@
               </div>
             </div>
           </div>
+        </div> -->
+      </section>
+
+      <section class="track01 bg-aliceblue w-100 p-3" id="track01">
+        <div class="card border-0 bg-transparent p-3">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <div class="">
+              <div class="form-group">
+                  <select name="" id="select_countries" class="btn bg-white" onchange="khowCountry()">  
+                  </select>
+              </div>
+            </div>
+            <div>
+              <p class="mb-0">Update: February 3, 2022</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-transparent p-3 pt-4 border-0 border-top" id="cardCountry">
+          <div class="row h-100  ">
+            <div class="col-12 col-md-12 col-lg-6">
+              <div class="row">
+                <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3 ">
+                  <div class="card border-0 card-total-cases p-2">
+                    <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+                      <h7 class="ms-2 fs-5">Total Cases</h7>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center p-2">
+                      <p class=" ms-2 fs-2 mb-0 fw-bold text-blue-primary">15451213</p>
+                    </div>
+                    <img src="./images/icons/covid-blue.svg" alt="covis">
+                  </div>
+                </div>
+
+                <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3 ">
+                  <div class="card border-0 card-total-cases p-2">
+                    <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+                      <h7 class="ms-2 fs-5">Total Deaths</h7>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center p-2">
+                      <p class=" ms-2 fs-2 mb-0 fw-bold text-danger">15451213</p>
+                    </div>
+                    <img src="./images/icons/covid-red.svg" alt="covis">
+                  </div>
+                </div>
+
+                <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3">
+                  <div class="card border-0 card-total-cases p-2">
+                    <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+                      <h7 class="ms-2 fs-5">Total Recovered</h7>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center p-2">
+                      <p class=" ms-2 fs-2 mb-0 fw-bold text-success">15451213</p>
+                    </div>
+                    <img src="./images/icons/covid-green.svg" alt="covis">
+                  </div>
+                </div>
+
+                <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3">
+                  <div class="card border-0 card-total-cases p-2">
+                    <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+                      <h7 class="ms-2 fs-5">Total Active</h7>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center p-2">
+                      <p class=" ms-2 fs-2 mb-0 fw-bold text-primary">15451213</p>
+                    </div>
+                    <img src="./images/icons/covid-blue.svg" alt="covis">
+                  </div>
+                </div>
+
+                <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3">
+                  <div class="card border-0 card-total-cases p-2">
+                    <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+                      <h7 class="ms-2 fs-5">New Cases</h7>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center p-2">
+                      <p class=" ms-2 fs-2 mb-0 fw-bold text-orange">15451213</p>
+                    </div>
+                    <img src="./images/icons/covid-orange.svg" alt="covis">
+                  </div>
+                </div>
+
+                <div class="card col-md-4 col-lg-6 col-6 p-2 bg-transparent border-0 card-animation mb-3">
+                  <div class="card border-0 card-total-cases p-2">
+                    <div class="d-flex justify-content-start align-items-center p-2 border-bottom">
+                      <h7 class="ms-2 fs-5">New Deaths</h7>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center p-2">
+                      <p class=" ms-2 fs-2 mb-0 fw-bold text-darkred">15451213</p>
+                    </div>
+                    <img src="./images/icons/covid-redark.svg" alt="covis">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 bg-danger">
+              <p>Mapa</p>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-12 row">
+              <div class="card col-6 col-md-3 border-0 card-animation02">
+                <div class="card row d-flex flex-row pt-4 pb-4 border-0 border-end">
+                  <div class="col-4">
+                    <img src="./images/icons/covid-defult.svg" alt="covis">
+                  </div>
+                  <div class="col-8">
+                    <p class="mb-0">Confirmed</p>
+                    <p class="fs-5 mb-0 text-blue-primary fw-bold">54121312312</p>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="card col-6 col-md-3 border-0 card-animation02">
+                <div class="card row d-flex flex-row pt-4 pb-4 border-0 border-end">
+                  <div class="col-4">
+                    <img src="./images/icons/covid-green.svg" alt="covis">
+                  </div>
+                  <div class="col-8">
+                    <p class="mb-0">Recovered</p>
+                    <p class="fs-5 mb-0 text-blue-primary fw-bold">54121312312</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-6 col-md-3 border-0 card-animation02">
+                <div class="card row d-flex flex-row pt-4 pb-4 border-0 border-end">
+                  <div class="col-4">
+                    <img src="./images/icons/covid-red.svg" alt="covis">
+                  </div>
+                  <div class="col-8">
+                    <p class="mb-0">Deaths</p>
+                    <p class="fs-5 mb-0 text-blue-primary fw-bold">54121312312</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-6 col-md-3 border-0 card-animation02">
+                <div class="card row d-flex flex-row pt-4 pb-4 border-0 border-end">
+                  <div class="col-4">
+                    <img src="./images/icons/covid-redark.svg" alt="covis">
+                  </div>
+                  <div class="col-8">
+                    <p class="mb-0">New Deaths</p>
+                    <p class="fs-5 mb-0 text-blue-primary fw-bold">54121312312</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -164,5 +321,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- Script js main -->
+    <script src="./js/track01.js"></script>
   </body>
 </html>
