@@ -784,3 +784,88 @@ img {
 .card-animation02:hover img {
     animation: rotation 6s infinite linear;
 }
+
+
+
+/*--------styles-track-03---------*/
+
+.item{
+    background-color: #edffec;
+}
+
+.subtitle_card{
+    font-size: 1rem;
+}
+
+.title_card{
+    color: #121158;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+
+
+.item img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    left: 15px;
+    top: 50%;
+    margin-top: -15px;
+    border-radius: 30px;
+}
+
+.item span {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.item span:last-child {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.item {
+    background: #fff;
+    box-shadow: 0 15px 30px 0 rgb(20 50 90 / 5%);
+    display: block;
+    padding: 10px 10px 10px 55px;
+    position: relative;
+    color: #121158;
+    margin-bottom: 15px;
+}
+
+.active {
+    transition: all 0.3 ease-in;
+}
+
+.active:hover {
+    transform: scale(1.050);
+    transition: all 0.3 ease-in;
+}
+
+
+
+
+
+/*----track-08------*/
+
+.card-body i{
+    padding: 5px;
+}
+
+.parrafo_track{
+    font-size: 1rem;
+    color: #121158;
+    font-weight: 700;
+}
+.text_track{
+    font-size: .6rem;
+    float: left;
+}
