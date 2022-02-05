@@ -889,7 +889,8 @@ img {
 }
 
 .bandera {
-    border-radius: 15%;
+    border-radius: 12%;
+    height: 1.7rem;
 }
 
 .blue {

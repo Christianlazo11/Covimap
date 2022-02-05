@@ -113,12 +113,12 @@ function pintarTrackerV(data) {
      <div class="col-sm-12 col-md-12 col-lg-6 mb-3 mt-2">
          <div class="bg-white p-3">
              <div class="widget-head card p-2 border-0 border-bottom">
-                <h4 class="ms-2 dez-title"><span><img src="${data[i].countryInfo.flag}"  class="bandera" width="50"></span > ${data[i].country}</h4>
+                <h4 class="ms-2 dez-title fs-5 text-blue-primary fw-bold"><span><img src="${data[i].countryInfo.flag}"  class="bandera me-1" width="36rem"></span > ${data[i].country}</h4>
              </div>
              <div class="widget-body" id="widget-body">
                  <div class="row" >
                      <div class="col text-primary" > <span class="blue subt">Cases</span>
-                     <h4 class="blue f-w">${data[i].cases}</h4>
+                     <h4 class="f-w">${data[i].cases}</h4>
              </div>
              <div class="col text-danger info"> <span class="red subt">Death</span>
                  <h4 class="red f-w">${data[i].deaths}</h4>
