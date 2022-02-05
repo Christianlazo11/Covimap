@@ -785,7 +785,6 @@ img {
 }
 
 
-<<<<<<< HEAD
 
 /*--------styles-track-03---------*/
 
@@ -868,47 +867,4 @@ img {
 .text_track{
     font-size: .6rem;
     float: left;
-=======
-/*Estilos tracker 5*/
-
-.bandera {
-    border-radius: 15%;
-}
-
-.blue {
-    color: #3639AE!important;
-}
-
-.red {
-    color: #ff0000 !important;
-}
-
-.green {
-    color: #82c519 !important;
-}
-
-.purple {
-    color: #673BB7 !important;
-}
-
-.orange {
-    color: #ff6a07 !important;
-}
-
-.light-blue {
-    color: #2c6dff !important;
-}
-
-.subt {
-    font-size: 12px;
-}
-
-.f-w {
-    font-weight: 800;
-}
-
-.square {
-    width: 100%;
-    background-color: #20c997;
->>>>>>> ac224b6593ef6e74164940a421e9d74c68099829
 }
