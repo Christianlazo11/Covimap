@@ -6,40 +6,40 @@ const bar_lateral = document.getElementById("barra_info_superior");
 const barra_paises = document.getElementById("barra_paises");
 //Obtenmos
 const selectCountries = document.getElementById("select_countries");
-const tracker05 = document.getElementById('tracker05');
+const tracker05 = document.getElementById("tracker05");
 const url = "https://disease.sh/v3/covid-19/countries";
 
 fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-        pintarBarra(data);
-    });
+  .then((response) => response.json())
+  .then((data) => {
+    pintarBarra(data);
+  });
 
 function pintarBarra(data) {
-    // console.log(data.cases);
-    let bar_sup = "";
+  // console.log(data.cases);
+  let bar_sup = "";
 
-    let totalCase = 0;
-    let totalCaseToday = 0;
-    let activeCase = 0;
-    let recoveredCase = 0;
-    let recoveredCaseToday = 0;
-    let deathCase = 0;
-    let deathCaseToday = 0;
-    let arrayCountries = [];
+  let totalCase = 0;
+  let totalCaseToday = 0;
+  let activeCase = 0;
+  let recoveredCase = 0;
+  let recoveredCaseToday = 0;
+  let deathCase = 0;
+  let deathCaseToday = 0;
+  let arrayCountries = [];
 
-    for (let i = 0; i < data.length; i++) {
-        arrayCountries.push(data[i].country);
-        totalCase += data[i].cases;
-        totalCaseToday += data[i].todayCases;
-        activeCase += data[i].active;
-        recoveredCase += data[i].recovered;
-        recoveredCaseToday += data[i].todayRecovered;
-        deathCase += data[i].deaths;
-        deathCaseToday += data[i].todayDeaths;
-    }
+  for (let i = 0; i < data.length; i++) {
+    arrayCountries.push(data[i].country);
+    totalCase += data[i].cases;
+    totalCaseToday += data[i].todayCases;
+    activeCase += data[i].active;
+    recoveredCase += data[i].recovered;
+    recoveredCaseToday += data[i].todayRecovered;
+    deathCase += data[i].deaths;
+    deathCaseToday += data[i].todayDeaths;
+  }
 
-    bar_sup = `<div
+  bar_sup = `<div
   class="card border-0 bg-tracker-pink p-3 mb-3 d-flex flex-row align-items-center justify-content-between total-case"
 >
   <p class="mb-0 me-4 text-blue-primary fw-bold">Total Case</p>
@@ -69,19 +69,19 @@ function pintarBarra(data) {
   <span class="fs-3 text-primary fw-bold">${deathCase}</span>
 </div>`;
 
-    bar_lateral.innerHTML = bar_sup;
-    pintarPaises(data);
-    pintarTrackerV(data);
-    //   getCountries(arrayCountries);
+  bar_lateral.innerHTML = bar_sup;
+  pintarPaises(data);
+  pintarTrackerV(data);
+  //   getCountries(arrayCountries);
 }
 
 function pintarPaises(data) {
-    let newData = data.slice(0, 10);
+  let newData = data.slice(0, 10);
 
-    let countries = "";
+  let countries = "";
 
-    for (let i = 0; i < newData.length; i++) {
-        countries += `
+  for (let i = 0; i < newData.length; i++) {
+    countries += `
   <div
     class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries mb-2"
   >
@@ -101,19 +101,19 @@ function pintarPaises(data) {
   </div>
 </div>
 </div>`;
-    }
-    barra_paises.innerHTML = countries;
+  }
+  barra_paises.innerHTML = countries;
 }
 
 function pintarTrackerV(data) {
-    let body = "";
+  let body = "";
 
-    for (let i = 0; i < data.length; i++) {
-        body += ` <div class="">
-     <div class="col-xl-6 ">
-         <div class="country-widget widget-area">
-             <div class="widget-head card border-0 border-bottom">
-                <h4 class="dez-title"><span><img src="${data[i].countryInfo.flag}"  class="bandera" width="50"></span > ${data[i].country}</h4>
+  for (let i = 0; i < data.length; i++) {
+    body += `
+     <div class="col-sm-12 col-md-12 col-lg-6 mb-3 mt-2">
+         <div class="bg-white p-3">
+             <div class="widget-head card p-2 border-0 border-bottom">
+                <h4 class="ms-2 dez-title"><span><img src="${data[i].countryInfo.flag}"  class="bandera" width="50"></span > ${data[i].country}</h4>
              </div>
              <div class="widget-body" id="widget-body">
                  <div class="row" >
@@ -143,9 +143,8 @@ function pintarTrackerV(data) {
  </div>
  </div>
 
-`
-    }
+`;
+  }
 
-    tracker05.innerHTML = body;
-
+  tracker05.innerHTML = body;
 }
