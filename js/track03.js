@@ -11,6 +11,14 @@ const countryTopCases =document.getElementById("countryTopCases");
 
 const countryTodayCases = document.getElementById("countryTodayCases");
 
+const countryDeathsCases = document.getElementById("countryDeathsCases");
+
+const countryDeathsCases2 = document.getElementById("countryDeathsCases2");
+
+const countryActiveCases = document.getElementById("countryActiveCases");
+
+const countryRecoverCases = document.getElementById("countryRecoverCases");
+
 const url = "https://disease.sh/v3/covid-19/countries";
 
 fetch(url)
@@ -77,6 +85,11 @@ function pintarBarra(data) {
   pintarPaises(data);
   pintar_topcase(data);
   pintar_today(data);
+  pintar_deaths(data);
+  pintar_deaths2(data);
+  pintar_active(data);
+  pintar_recover(data);
+
   //   getCountries(arrayCountries);
 }
 
@@ -170,4 +183,124 @@ function pintar_today(data){
 }
 
 
+//--------Today Deaths ------------//
 
+function pintar_deaths(data){
+  data.sort((a1,a2)=>{
+    if (a1.cases < a2.cases){
+      return -1;
+    }
+    else if (a1.cases > a2.cases){
+      return 1;
+    } 
+    else{
+      return 0;
+    }
+  })
+  let body = "";
+
+  let newData = data.slice(data.length -10, data.length);
+
+  for (let i = 0; i < newData.length; i++){
+    body +=
+    `
+    <div class="active item">
+              <img src="${newData[i].countryInfo.flag}" width="30">
+              <span class="text-blue-primary">${newData[i].country}</span>
+              <span class="text-blue-primary fw-bold">${newData[i].todayDeaths}</span>
+            </div>
+     `;}
+    countryDeathsCases.innerHTML = body;
+}
+
+//--------Today Deaths2------------//
+
+function pintar_deaths2(data){
+  data.sort((a1,a2)=>{
+    if (a1.cases < a2.cases){
+      return -1;
+    }
+    else if (a1.cases > a2.cases){
+      return 1;
+    }
+    else {
+      return 0;
+    }
+  })
+  let body = "";
+
+  let newData = data.slice(data.length -10, data.length);
+
+  for (let i = 0; i < newData.length; i++){
+    body +=
+    `
+    <div class="active item">
+              <img src="${newData[i].countryInfo.flag}" width="30">
+              <span class="text-blue-primary">${newData[i].country}</span>
+              <span class="text-blue-primary fw-bold">${newData[i].todayDeaths}</span>
+            </div>
+     `;}
+     countryDeathsCases2.innerHTML = body;
+
+}
+
+//--------Active cases ------------//
+
+function pintar_active(data){
+  data.sort((a1,a2)=>{
+    if (a1.cases < a2.cases){
+      return -1;
+    }
+    else if (a1.cases > a2.cases){
+      return 1;
+    } 
+    else{
+      return 0;
+    }
+  })
+  let body = "";
+
+  let newData = data.slice(data.length -10, data.length);
+
+  for (let i = 0; i < newData.length; i++){
+    body +=
+    `
+    <div class="active item">
+              <img src="${newData[i].countryInfo.flag}" width="30">
+              <span class="text-blue-primary">${newData[i].country}</span>
+              <span class="text-blue-primary fw-bold">${newData[i].active}</span>
+            </div>
+     `;}
+     countryActiveCases.innerHTML = body;
+}
+
+//--------Recover cases ------------//
+
+function pintar_recover(data){
+  data.sort((a1,a2)=>{
+    if (a1.cases < a2.cases){
+      return -1;
+    }
+    else if (a1.cases > a2.cases){
+      return 1;
+    }
+    else{
+      return 0;
+    }
+  })
+  let body ="";
+
+  let newData = data.slice(data.length -10, data.length);
+
+  for (let i = 0; i < newData.length; i++){
+    body +=
+    `
+    <div class="active item">
+    <img src="${newData[i].countryInfo.flag}" width="30">
+    <span class="text-blue-primary">${newData[i].country}</span>
+    <span class="text-blue-primary fw-bold">${newData[i].recovered}</span>
+  </div>`;}
+
+  countryRecoverCases.innerHTML = body;
+
+}

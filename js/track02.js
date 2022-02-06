@@ -1,5 +1,11 @@
-// Metodos para Realizar la petición a la api y asi poder pintar los datos en el html
+//Js Para La tabla
+$(document).ready(function () {
+  $("#example").DataTable();
+});
 
+// Metodos para Realizar la petición a la api y asi poder pintar los datos en el html
+//Esta variable la usaremos para agregar elementos al id example que es la tabla
+const tableData = document.getElementById("bodyTable");
 //Obtenemos la barra lateral superior
 const bar_lateral = document.getElementById("barra_info_superior");
 //Obtenemos la barra de paises
@@ -18,6 +24,7 @@ fetch(url)
 function pintarBarra(data) {
   // console.log(data.cases);
   let bar_sup = "";
+  let body_table = "";
 
   let totalCase = 0;
   let totalCaseToday = 0;
@@ -37,6 +44,21 @@ function pintarBarra(data) {
     recoveredCaseToday += data[i].todayRecovered;
     deathCase += data[i].deaths;
     deathCaseToday += data[i].todayDeaths;
+
+    body_table += `<tr>
+    <td><img src="${
+      data[i].countryInfo.flag
+    }" style="height: 1rem; width:2rem;"/></td>
+    <td>${data[i].country}</td>
+    <td>${data[i].cases}</td>
+    <td>${0} </td>
+    <td>${data[i].deaths}</td>
+    <td>${0}</td>
+    <td>${data[i].recovered}</td>
+    <td>${data[i].active}</td>
+    <td>${data[i].critical}</td>
+    <td>${data[i].tests}</td>
+    </tr>`;
   }
 
   bar_sup = `<div
@@ -70,6 +92,7 @@ function pintarBarra(data) {
 </div>`;
 
   bar_lateral.innerHTML = bar_sup;
+  tableData.innerHTML = body_table;
   pintarPaises(data);
   //   getCountries(arrayCountries);
 }
