@@ -929,3 +929,32 @@ img {
     width: 100%;
     background-color: #20c997;
 }
+
+/* Styles Tracker 04 */
+
+.card-flag {
+    padding: 0.8rem;
+    cursor: pointer;
+}
+.card-flag:hover {
+    background-color: #3639AE;
+    transition: background-color .5s;
+}
+
+.card-flag:hover span {
+    color: white !important;
+}
+.card-flag img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.card-flag.active-tab {
+    background-color: #3639AE;
+    transition: background-color .5s;
+}
+
+.card-flag.active-tab span {
+    color: white !important;
+}
