@@ -88,9 +88,9 @@ function printCardCountry(data) {
   <div>
     <h1 class="text-danger fs-3">${data.cases}</h1>
     <div class="d-flex justify-content-around align-items-center">
-      <i class="fas fa-chart-line text-danger fs-5"></i>
-      <span class="botton-orange">${data.active}</span>
-      <span class="botton-green">${data.recovered}</span>
+      <i class="fas fa-chart-line text-danger fs-5 me-2"></i>
+      <span class="botton-orange me-2">${data.active}</span>
+      <span class="botton-green me-2">${data.recovered}</span>
     </div>
   </div>
   </div>`;
