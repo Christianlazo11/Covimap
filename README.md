@@ -2,7 +2,7 @@
 
 El Covid-19 es una realidad que afrontamos en este siglo, y a pesar de ser tan malo, gracias a la tecnología podemos luchar contra él creando estrategias, medidas de contención basándonos en datos que podemos recoger y mantener informado a cualquier usuario de la situación en cada país.
 
-[![smartmockups-kzd3bovv.jpg](https://i.postimg.cc/3xZdV2ks/smartmockups-kzd3bovv.jpg)](https://postimg.cc/NK5sr97D)
+[![smartmockups-kzd3bovv-removebg-preview.png](https://i.postimg.cc/x17TWg0F/smartmockups-kzd3bovv-removebg-preview.png)](https://postimg.cc/0zYsSYKp)
 
 ## Comenzando 🚀
 Desarrollamos una página web en la que los usuarios pueden consultar diversa información acerca de los datos referentes a la pandemía ocasionada por el COVID-19.
