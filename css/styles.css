@@ -256,24 +256,24 @@ span {
     line-height: 3;
 }
 
-.post-meta {
+.post-item {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    font-size: .6rem;
 }
 
 .bi-chat-left {
     color: gray;
-    padding-right: 10px;
 }
+
 
 .bi-stopwatch {
     color: gray;
-    padding-right: 10px;
 }
 
 .item_new {
     color: gray;
+    padding-left: 20px;
 }
 
 .spreads {
@@ -1054,3 +1054,5 @@ img {
 .card-flag.active-tab span {
     color: white !important;
 }
+
+
