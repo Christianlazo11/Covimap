@@ -416,6 +416,11 @@ body {
     z-index: -1;
  }  */
 
+ @media (max-width: 4000px) {
+    .header {
+        height: 800px;
+    }
+ }
 @media (max-width: 1450px) {
     .header {
         height: 850px;
