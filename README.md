@@ -57,7 +57,10 @@ No se necesita ningun programa o elemento externo. Con solo visitar el link del 
 
 * Formadores Educamás.
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> bcf105d6aa7adbb3f735f0be09bfd1c2fd5db33b
