@@ -1,3 +1,11 @@
+const loader = document.querySelector("#loader");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 1000);
+});
+
 // Esta sera la funcion que se llamara al iniciar la aplicación en este caso pintara los datos de afghanistan
 window.onload = () => {
   InitialCountry();
