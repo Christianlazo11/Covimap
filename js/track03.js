@@ -7,7 +7,7 @@ const barra_paises = document.getElementById("barra_paises");
 //Obtenmos
 const selectCountries = document.getElementById("select_countries");
 
-const countryTopCases =document.getElementById("countryTopCases");
+const countryTopCases = document.getElementById("countryTopCases");
 
 const countryTodayCases = document.getElementById("countryTodayCases");
 
@@ -132,27 +132,24 @@ function pintarPaises(data) {
   }
   barra_paises.innerHTML = countries;
 }
-<<<<<<< HEAD
-=======
 //---------------------Top Cases--------------------------------//
 
 function pintar_topcase(data) {
-  data.sort((a1,a2)=>{
-    if (a1.cases < a2.cases){
+  data.sort((a1, a2) => {
+    if (a1.cases < a2.cases) {
       return -1;
-    }
-    else if (a1.cases > a2.cases){
+    } else if (a1.cases > a2.cases) {
       return 1;
-    }
-    else {
+    } else {
       return 0;
     }
-  })
+  });
   let body = "";
 
-  let newData = data.slice(data.length -10, data.length);
+  let newData = data.slice(data.length - 10, data.length);
+  newData = newData.reverse();
 
-  for (let i = 0; i < newData.length; i++){
+  for (let i = 0; i < newData.length; i++) {
     body += `
 
     <div class="active item">
@@ -161,159 +158,151 @@ function pintar_topcase(data) {
                <span class="text-blue-primary fw-bold">${newData[i].cases}</span>
              </div>
 
-    `;}
-    countryTopCases.innerHTML = body;
+    `;
+  }
+  countryTopCases.innerHTML = body;
 }
 
 //--------Today Cases ------------//
 
-function pintar_today(data){
-  data.sort((a1,a2)=>{
-    if (a1.cases < a2.cases){
+function pintar_today(data) {
+  data.sort((a1, a2) => {
+    if (a1.todayCases < a2.todayCases) {
       return -1;
-    }
-    else if (a1.cases > a2.cases){
+    } else if (a1.todayCases > a2.todayCases) {
       return 1;
-    }
-    else{
+    } else {
       return 0;
     }
-  })
+  });
   let body = "";
 
-  let newData = data.slice(data.length -10, data.length);
+  let newData = data.slice(data.length - 10, data.length);
+  newData = newData.reverse();
 
-  for (let i = 0; i < newData.length; i++){
-    body +=
-    `
+  for (let i = 0; i < newData.length; i++) {
+    body += `
     <div class="active item">
     <img src="${newData[i].countryInfo.flag}" width="30">
     <span class="text-blue-primary">${newData[i].country}</span>
     <span class="text-blue-primary fw-bold">${newData[i].todayCases}</span>
-  </div> `;}
-    countryTodayCases.innerHTML = body;
+  </div> `;
+  }
+  countryTodayCases.innerHTML = body;
 }
-
 
 //--------Today Deaths ------------//
 
-function pintar_deaths(data){
-  data.sort((a1,a2)=>{
-    if (a1.cases < a2.cases){
+function pintar_deaths(data) {
+  data.sort((a1, a2) => {
+    if (a1.deaths < a2.deaths) {
       return -1;
-    }
-    else if (a1.cases > a2.cases){
+    } else if (a1.deaths > a2.deaths) {
       return 1;
-    } 
-    else{
+    } else {
       return 0;
     }
-  })
+  });
   let body = "";
 
-  let newData = data.slice(data.length -10, data.length);
+  let newData = data.slice(data.length - 10, data.length);
+  newData = newData.reverse();
 
-  for (let i = 0; i < newData.length; i++){
-    body +=
-    `
+  for (let i = 0; i < newData.length; i++) {
+    body += `
     <div class="active item">
               <img src="${newData[i].countryInfo.flag}" width="30">
               <span class="text-blue-primary">${newData[i].country}</span>
-              <span class="text-blue-primary fw-bold">${newData[i].todayDeaths}</span>
+              <span class="text-blue-primary fw-bold">${newData[i].deaths}</span>
             </div>
-     `;}
-    countryDeathsCases.innerHTML = body;
+     `;
+  }
+  countryDeathsCases.innerHTML = body;
 }
 
 //--------Today Deaths2------------//
 
-function pintar_deaths2(data){
-  data.sort((a1,a2)=>{
-    if (a1.cases < a2.cases){
+function pintar_deaths2(data) {
+  data.sort((a1, a2) => {
+    if (a1.todayDeaths < a2.todayDeaths) {
       return -1;
-    }
-    else if (a1.cases > a2.cases){
+    } else if (a1.todayDeaths > a2.todayDeaths) {
       return 1;
-    }
-    else {
+    } else {
       return 0;
     }
-  })
+  });
   let body = "";
 
-  let newData = data.slice(data.length -10, data.length);
+  let newData = data.slice(data.length - 10, data.length);
+  newData = newData.reverse();
 
-  for (let i = 0; i < newData.length; i++){
-    body +=
-    `
+  for (let i = 0; i < newData.length; i++) {
+    body += `
     <div class="active item">
               <img src="${newData[i].countryInfo.flag}" width="30">
               <span class="text-blue-primary">${newData[i].country}</span>
               <span class="text-blue-primary fw-bold">${newData[i].todayDeaths}</span>
             </div>
-     `;}
-     countryDeathsCases2.innerHTML = body;
-
+     `;
+  }
+  countryDeathsCases2.innerHTML = body;
 }
 
 //--------Active cases ------------//
 
-function pintar_active(data){
-  data.sort((a1,a2)=>{
-    if (a1.cases < a2.cases){
+function pintar_active(data) {
+  data.sort((a1, a2) => {
+    if (a1.active < a2.active) {
       return -1;
-    }
-    else if (a1.cases > a2.cases){
+    } else if (a1.active > a2.active) {
       return 1;
-    } 
-    else{
+    } else {
       return 0;
     }
-  })
+  });
   let body = "";
 
-  let newData = data.slice(data.length -10, data.length);
+  let newData = data.slice(data.length - 10, data.length);
+  newData = newData.reverse();
 
-  for (let i = 0; i < newData.length; i++){
-    body +=
-    `
+  for (let i = 0; i < newData.length; i++) {
+    body += `
     <div class="active item">
               <img src="${newData[i].countryInfo.flag}" width="30">
               <span class="text-blue-primary">${newData[i].country}</span>
               <span class="text-blue-primary fw-bold">${newData[i].active}</span>
             </div>
-     `;}
-     countryActiveCases.innerHTML = body;
+     `;
+  }
+  countryActiveCases.innerHTML = body;
 }
 
 //--------Recover cases ------------//
 
-function pintar_recover(data){
-  data.sort((a1,a2)=>{
-    if (a1.cases < a2.cases){
+function pintar_recover(data) {
+  data.sort((a1, a2) => {
+    if (a1.recovered < a2.recovered) {
       return -1;
-    }
-    else if (a1.cases > a2.cases){
+    } else if (a1.recovered > a2.recovered) {
       return 1;
-    }
-    else{
+    } else {
       return 0;
     }
-  })
-  let body ="";
+  });
+  let body = "";
 
-  let newData = data.slice(data.length -10, data.length);
+  let newData = data.slice(data.length - 10, data.length);
+  newData = newData.reverse();
 
-  for (let i = 0; i < newData.length; i++){
-    body +=
-    `
+  for (let i = 0; i < newData.length; i++) {
+    body += `
     <div class="active item">
     <img src="${newData[i].countryInfo.flag}" width="30">
     <span class="text-blue-primary">${newData[i].country}</span>
     <span class="text-blue-primary fw-bold">${newData[i].recovered}</span>
-  </div>`;}
+  </div>`;
+  }
 
   countryRecoverCases.innerHTML = body;
-
 }
->>>>>>> 4105f2a3fc604a693c4911ac50412b19b17cdf1f
