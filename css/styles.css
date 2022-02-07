@@ -437,8 +437,77 @@ img {
 }
 
 .card-banner {
-    width: 20rem;
+    width: 22rem;
+    cursor: pointer;
+    animation: myCardCountry 2s ease-out 0s 1 normal forwards;
 }
+
+.card-banner-content {
+    animation: myCardCountryContent 2s ease-in 0s 1 normal forwards;
+}
+
+.card-banner img {
+    height: 3.2rem;
+    width: 5rem;
+}
+
+.card-banner h1 {
+    font-weight: bold;
+}
+
+.card-banner .botton-orange {
+    background-color:orange;
+    padding: 0.1rem 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.card-banner .botton-green {
+    background-color: #10D876;
+    padding: 0.1rem 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+}
+
+@keyframes myCardCountry {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @keyframes myCardCountryContent {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 
 
 /* .btn-circle-content {
