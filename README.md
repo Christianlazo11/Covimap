@@ -61,6 +61,10 @@ https://quirky-engelbart-595483.netlify.app/
 ## Pre-requisitos 📋
 No se necesita ningun programa o elemento externo. Con solo visitar el link del proyecto puedes acceder a toda la información. 
 
+## Product Backlog 📎
+
+https://danielatobar.atlassian.net/jira/software/projects/IC1EEM/boards/3/roadmap?shared=&atlOrigin=eyJpIjoiMGI4YmQxNGUyNGFiNGFiYmIyYzdmNjNmZjM2ZmNkMzYiLCJwIjoiaiJ9
+
 ## Despliegue 📦
 
 - Para realizar el deploy el usuario debe acceder desde el link previamente proporcionado. Hecho esto, se abrirá una ventana donde se podrá ver la Web App. 
