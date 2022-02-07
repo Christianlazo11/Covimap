@@ -228,6 +228,9 @@ span {
     font-size: 13px;
     color: #8686b5;
     line-height: 1.75;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .bottom-widget li {
