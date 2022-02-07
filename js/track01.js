@@ -1,3 +1,11 @@
+const loader = document.querySelector("#loader");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 1000);
+});
+
 // Esta sera la funcion que se llamara al iniciar la aplicación en este caso pintara los datos de afghanistan
 window.onload = () => {
   InitialCountry();
@@ -86,33 +94,33 @@ function pintarBarra(data) {
 
   bar_sup = `<div
   class="card border-0 bg-tracker-pink p-3 mb-3 d-flex flex-row align-items-center justify-content-between total-case"
->
+  >
   <p class="mb-0 me-4 text-blue-primary fw-bold">Total Case</p>
   <span class="text-secondary letter-button-tracker"
     >+${totalCaseToday}</span
   >
   <span class="fs-3 text-danger fw-bold">${totalCase}</span>
-</div>
-<div
+  </div>
+  <div
   class="card border-0 bg-tracker-pink2 p-3 mb-3 d-flex flex-row align-items-center justify-content-between active-case"
->
+  >
   <p class="mb-0 me-4 text-blue-primary fw-bold">Active Case</p>
   <span class="fs-3 text-orange fw-bold">${activeCase}</span>
-</div>
-<div
+  </div>
+  <div
   class="card border-0 bg-tracker-green p-3 mb-3 d-flex flex-row align-items-center justify-content-between recovered-case"
->
+  >
   <p class="mb-0 me-4 text-blue-primary fw-bold">Recovered Case</p>
   <span class="text-secondary letter-button-tracker">+${recoveredCaseToday}</span>
   <span class="fs-3 text-success fw-bold">${recoveredCase}</span>
-</div>
-<div
+  </div>
+  <div
   class="card border-0 bg-tracker-blue p-3 mb-3 d-flex flex-row align-items-center justify-content-between deaths-case"
->
+  >
   <p class="mb-0 me-4 text-blue-primary fw-bold">Deaths Case</p>
   <span class="text-secondary letter-button-tracker">+${deathCaseToday}</span>
   <span class="fs-3 text-primary fw-bold">${deathCase}</span>
-</div>`;
+  </div>`;
 
   //Creamos las varialbes para obtener la fecha actual
   let today = new Date();

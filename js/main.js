@@ -1,3 +1,11 @@
+const loader = document.querySelector("#loader");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 1000);
+});
+
 //Metodos y variables para mostrar las preguntas frecuentes
 const panel = document.querySelectorAll(".boton");
 

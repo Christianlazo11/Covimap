@@ -29,7 +29,7 @@
       <section>
         <div
           class="d-flex flex-column flex-shrink-0 bg-gray-tracker col-2 vh-100 d-flex justify-content-center bar-tracker"
-          style="width: 6rem"
+          style="width: 6rem;"
         >
           <a
             href="./index.html"
@@ -100,88 +100,157 @@
       </section>
 
       <section class="nav-info bg-white">
-        <div class="d-flex flex-column overflow-auto vh-100" id="cards-container" style="width: 25rem">
+        <div
+          class="d-flex flex-column overflow-auto vh-100"
+          id="cards-container"
+          style="width: 25rem;"
+        >
           <h4 class="py-4 p-4 pb-0 fw-bold fs-3">COVID-19 Tracker</h4>
 
-          <div class="total-cases p-3" id="barra_info_superior">
-            <!-- <div
-              class="card border-0 bg-tracker-pink p-3 mb-3 d-flex flex-row align-items-center justify-content-between total-case"
-            >
-              <p class="mb-0 me-4 text-blue-primary fw-bold">Total Case</p>
-              <span class="text-secondary letter-button-tracker"
-                >+145641544</span
-              >
-              <span class="fs-3 text-danger fw-bold">38784564</span>
-            </div>
-            <div
-              class="card border-0 bg-tracker-pink2 p-3 mb-3 d-flex flex-row align-items-center justify-content-between active-case"
-            >
-              <p class="mb-0 me-4 text-blue-primary fw-bold">Active Case</p>
-              <span class="fs-3 text-orange fw-bold">378574839</span>
-            </div>
-            <div
-              class="card border-0 bg-tracker-green p-3 mb-3 d-flex flex-row align-items-center justify-content-between recovered-case"
-            >
-              <p class="mb-0 me-4 text-blue-primary fw-bold">Recovered Case</p>
-              <span class="text-secondary letter-button-tracker">+0</span>
-              <span class="fs-3 text-success fw-bold">38745645</span>
-            </div>
-            <div
-              class="card border-0 bg-tracker-blue p-3 mb-3 d-flex flex-row align-items-center justify-content-between deaths-case"
-            >
-              <p class="mb-0 me-4 text-blue-primary fw-bold">Deaths Case</p>
-              <span class="text-secondary letter-button-tracker">+874545</span>
-              <span class="fs-3 text-primary fw-bold">38745645</span>
-            </div> -->
-          </div>
+          <div class="total-cases p-3" id="barra_info_superior"></div>
           <div class="Top 10 Country p-3">
             <h4 class="fs-3">Top 10 Country</h4>
-            <div class="p-3" id="barra_paises">
-
-            </div>
-            <!-- <h4 class="fs-3">Top 10 Country</h4>
-            <div
-              class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries"
-            >
-              <div
-                class="d-flex flex-row justify-content-center align-items-center"
-              >
-                <img
-                  class="img-countries me-2"
-                  src="./images/bandera_colombia.png"
-                  alt="fly"
-                />
-                <p class="mb-0">USA</p>
-              </div>
-              <div>
-                <p class="mb-0 text-blue-primary">546467644</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </section>
-
-      <section class="track01 bg-warning w-100 p-3" id="track01">
-        <!-- <div class="card">
-          <div
-            class="d-flex flex-row justify-content-between align-items-center"
-          >
-            <div class="">
-              <div class="form-group">
-                  <select name="" id="select_countries" class="btn" onchange="khowCountry()">
-                      
-                  </select>
-              </div>
-            </div>
-            <div>
-              <p>Fecha</p>
-            </div>
+            <div class="p-3" id="barra_paises"></div>
           </div>
         </div>
+      </section>
 
-        <div class="card" id="cardCountry">
+      <section class="track01 w-100 p-3" id="track04">
+        <div
+          class="card d-flex flex-row align-items-center p-2 pt-3 border-0 border-bottom bg-transparent"
+        >
+          <h1 class="fs-4 fw-bold text-blue-primary">
+            Covid-19 Country Wise - Tabs
+          </h1>
+        </div>
+        <div
+          class="bg-transparent d-flex flex-row align-items-center flex-wrap p-3"
+          id="track04_tabs"
+        ></div>
 
-        </div> -->
+        <div class="card border-0 bg-transparent p-3" id="track04_cards">
+          <!-- <div class="row">
+            <div
+              class="card col-12 col-sm-12 col-md-4 col-lg-3 col-3 p-2 bg-transparent border-0 card-animation mb-1"
+            >
+              <div class="card border-0 card-total-cases p-2">
+                <div
+                  class="d-flex justify-content-start align-items-center p-2 border-bottom"
+                >
+                  <h1 class="ms-2 fs-5">Total Cases</h1>
+                </div>
+                <div
+                  class="d-flex justify-content-start align-items-center p-2"
+                >
+                  <p class="ms-2 fs-2 mb-0 fw-bold text-blue-primary">
+                    56451854
+                  </p>
+                </div>
+                <img src="./images/icons/covid-blue.svg" alt="covis" />
+              </div>
+            </div>
+
+            <div
+              class="card col-12 col-sm-12 col-md-4 col-lg-3 col-3 p-2 bg-transparent border-0 card-animation mb-1"
+            >
+              <div class="card border-0 card-total-cases p-2">
+                <div
+                  class="d-flex justify-content-start align-items-center p-2 border-bottom"
+                >
+                  <h1 class="ms-2 fs-5">Total Deaths</h1>
+                </div>
+                <div
+                  class="d-flex justify-content-start align-items-center p-2"
+                >
+                  <p class="ms-2 fs-2 mb-0 fw-bold text-danger">
+                    56451854
+                  </p>
+                </div>
+                <img src="./images/icons/covid-red.svg" alt="covis" />
+              </div>
+            </div>
+
+            <div
+              class="card col-12 col-sm-12 col-md-4 col-lg-3 col-3 p-2 bg-transparent border-0 card-animation mb-1"
+            >
+              <div class="card border-0 card-total-cases p-2">
+                <div
+                  class="d-flex justify-content-start align-items-center p-2 border-bottom"
+                >
+                  <h1 class="ms-2 fs-5">Total Recovered</h1>
+                </div>
+                <div
+                  class="d-flex justify-content-start align-items-center p-2"
+                >
+                  <p class="ms-2 fs-2 mb-0 fw-bold text-success">
+                    56451854
+                  </p>
+                </div>
+                <img src="./images/icons/covid-green.svg" alt="covis" />
+              </div>
+            </div>
+
+            <div
+              class="card col-12 col-sm-12 col-md-4 col-lg-3 col-3 p-2 bg-transparent border-0 card-animation mb-1"
+            >
+              <div class="card border-0 card-total-cases p-2">
+                <div
+                  class="d-flex justify-content-start align-items-center p-2 border-bottom"
+                >
+                  <h1 class="ms-2 fs-5">Total Active</h1>
+                </div>
+                <div
+                  class="d-flex justify-content-start align-items-center p-2"
+                >
+                  <p class="ms-2 fs-2 mb-0 fw-bold text-primary">
+                    56451854
+                  </p>
+                </div>
+                <img src="./images/icons/covid-blue.svg" alt="covis" />
+              </div>
+            </div>
+
+            <div
+              class="card col-12 col-sm-12 col-md-4 col-lg-3 col-3 p-2 bg-transparent border-0 card-animation mb-1"
+            >
+              <div class="card border-0 card-total-cases p-2">
+                <div
+                  class="d-flex justify-content-start align-items-center p-2 border-bottom"
+                >
+                  <h1 class="ms-2 fs-5">New Cases</h1>
+                </div>
+                <div
+                  class="d-flex justify-content-start align-items-center p-2"
+                >
+                  <p class="ms-2 fs-2 mb-0 fw-bold text-orange">
+                    56451854
+                  </p>
+                </div>
+                <img src="./images/icons/covid-orange.svg" alt="covis" />
+              </div>
+            </div>
+
+            <div
+              class="card col-12 col-sm-12 col-md-4 col-lg-3 col-3 p-2 bg-transparent border-0 card-animation mb-1"
+            >
+              <div class="card border-0 card-total-cases p-2">
+                <div
+                  class="d-flex justify-content-start align-items-center p-2 border-bottom"
+                >
+                  <h1 class="ms-2 fs-5">New Deaths</h1>
+                </div>
+                <div
+                  class="d-flex justify-content-start align-items-center p-2"
+                >
+                  <p class="ms-2 fs-2 mb-0 fw-bold text-darkred">
+                    56451854
+                  </p>
+                </div>
+                <img src="./images/icons/covid-redark.svg" alt="covis" />
+              </div>
+            </div>
+          </div> -->
+        </div>
       </section>
     </main>
 

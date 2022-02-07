@@ -98,7 +98,17 @@ function pintarBarra(data) {
 }
 
 function pintarPaises(data) {
-  let newData = data.slice(0, 10);
+  data.sort((a1, a2) => {
+    if (a1.cases < a2.cases) {
+      return -1;
+    } else if (a1.cases > a2.cases) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+
+  let newData = data.slice(data.length - 10, data.length);
 
   let countries = "";
 
