@@ -867,7 +867,9 @@ img {
     transition: all 0.3 ease-in;
 }
 
-
+.btn{
+    font-size: .8rem;
+}
 
 
 
@@ -885,8 +887,6 @@ img {
 .text_track{
     font-size: .6rem;
     float: left;
-<<<<<<< HEAD
-=======
 /*Estilos tracker 5*/
 }
 
@@ -930,5 +930,4 @@ img {
 .square {
     width: 100%;
     background-color: #20c997;
->>>>>>> a7861e4f00c25ce6b133d84e8f290afe929547c9
 }
