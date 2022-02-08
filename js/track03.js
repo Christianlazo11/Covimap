@@ -105,6 +105,7 @@ function pintarPaises(data) {
   });
 
   let newData = data.slice(data.length - 10, data.length);
+  newData = newData.reverse();
 
   let countries = "";
 
@@ -206,7 +207,7 @@ function pintar_deaths(data) {
   let body = "";
 
   let newData = data.slice(data.length - 10, data.length);
-  newData = newData.reverse(); //ponerlo al revés 
+  newData = newData.reverse(); //ponerlo al revés
 
   for (let i = 0; i < newData.length; i++) {
     body += `
@@ -224,7 +225,8 @@ function pintar_deaths(data) {
 
 function pintar_deaths2(data) {
   data.sort((a1, a2) => {
-    if (a1.todayDeaths < a2.todayDeaths) { //especifica el a1 y a2
+    if (a1.todayDeaths < a2.todayDeaths) {
+      //especifica el a1 y a2
       return -1;
     } else if (a1.todayDeaths > a2.todayDeaths) {
       return 1;
