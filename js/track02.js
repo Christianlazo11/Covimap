@@ -1,7 +1,52 @@
 //Js Para La tabla
-$(document).ready(function () {
-  $("#example").DataTable();
-});
+
+const getNewCases = async () => {
+  const response = await fetch("https://disease.sh/v3/covid-19/countries");
+  const data = await response.json();
+  // let usa = data.filter((val) => {
+  //   return val.countryRegion === "US";
+  // });
+  let usa = data;
+  $("#loadingLabel").hide();
+  $("#myTable").DataTable({
+    data: usa,
+    bLengthChange: false,
+    columns: [
+      // { data: "countryInfo.flag", title: "Flag" },
+      { data: "country", title: "Country" },
+      { data: "cases", title: "Cases" },
+      { data: "deaths", title: "Deaths" },
+      { data: "recovered", title: "Recovered " },
+      { data: "active", title: "Active" },
+      { data: "tests", title: "Tests" },
+      { data: "critical", title: "Critical" },
+    ],
+  });
+};
+
+getNewCases();
+// let datas;
+// fetch("https://disease.sh/v3/covid-19/countries")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     datas = data;
+//     console.log(datas);
+//   });
+
+// $(document).ready(function () {
+//   $("#example").DataTable({
+//     data: datas,
+//     bLengthChange: false,
+//     columns: [
+// { data: "cases", title: "Cases" },
+// { data: "deaths", title: "Deaths" },
+// { data: "recovered ", title: "Recovered " },
+// { data: "active ", title: "Active" },
+// { data: "tests", title: "Tests" },
+// { data: "critical", title: "Critical" },
+//     ],
+//   });
+// });
 
 // Metodos para Realizar la petición a la api y asi poder pintar los datos en el html
 //Esta variable la usaremos para agregar elementos al id example que es la tabla
@@ -92,7 +137,7 @@ function pintarBarra(data) {
 </div>`;
 
   bar_lateral.innerHTML = bar_sup;
-  tableData.innerHTML = body_table;
+  // tableData.innerHTML = body_table;
   pintarPaises(data);
   //   getCountries(arrayCountries);
 }
