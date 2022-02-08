@@ -87,6 +87,7 @@ function pintarPaises(data) {
   });
 
   let newData = data.slice(data.length - 10, data.length);
+  newData = newData.reverse();
 
   let countries = "";
 

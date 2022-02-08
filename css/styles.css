@@ -362,6 +362,24 @@ body {
     background: aliceblue;
 }
 
+svg path {
+    fill: #00394f;
+    stroke: #eee;
+    stroke-width: .25;
+}
+
+svg path {
+    fill: #3839AE;
+    stroke: #eee;
+    stroke-width: .25;
+}
+
+svg path:hover {
+    fill: #673BB7;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
 .bg-blue-primary {
     background-color: #3639AE !important;
 }
