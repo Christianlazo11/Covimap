@@ -2,23 +2,14 @@
 
 //Obtenemos la barra lateral superior
 const bar_lateral = document.getElementById("barra_info_superior");
-//Obtenemos la barra de paises
 const barra_paises = document.getElementById("barra_paises");
-//Obtenmos
 const selectCountries = document.getElementById("select_countries");
-
 const countryTopCases = document.getElementById("countryTopCases");
-
 const countryTodayCases = document.getElementById("countryTodayCases");
-
 const countryDeathsCases = document.getElementById("countryDeathsCases");
-
 const countryDeathsCases2 = document.getElementById("countryDeathsCases2");
-
 const countryActiveCases = document.getElementById("countryActiveCases");
-
 const countryRecoverCases = document.getElementById("countryRecoverCases");
-
 const url = "https://disease.sh/v3/covid-19/countries";
 
 fetch(url)
@@ -52,34 +43,29 @@ function pintarBarra(data) {
   }
 
   bar_sup = `<div
-  class="card border-0 bg-tracker-pink p-3 mb-3 d-flex flex-row align-items-center justify-content-between total-case"
->
+  class="card border-0 bg-tracker-pink p-3 mb-3 d-flex flex-row align-items-center justify-content-between total-case">
   <p class="mb-0 me-4 text-blue-primary fw-bold">Total Case</p>
   <span class="text-secondary letter-button-tracker"
-    >+${totalCaseToday}</span
-  >
+    >+${totalCaseToday}</span>
   <span class="fs-3 text-danger fw-bold">${totalCase}</span>
-</div>
-<div
-  class="card border-0 bg-tracker-pink2 p-3 mb-3 d-flex flex-row align-items-center justify-content-between active-case"
->
+  </div>
+  <div
+  class="card border-0 bg-tracker-pink2 p-3 mb-3 d-flex flex-row align-items-center justify-content-between active-case">
   <p class="mb-0 me-4 text-blue-primary fw-bold">Active Case</p>
   <span class="fs-3 text-orange fw-bold">${activeCase}</span>
-</div>
-<div
-  class="card border-0 bg-tracker-green p-3 mb-3 d-flex flex-row align-items-center justify-content-between recovered-case"
->
+  </div>
+  <div
+  class="card border-0 bg-tracker-green p-3 mb-3 d-flex flex-row align-items-center justify-content-between recovered-case">
   <p class="mb-0 me-4 text-blue-primary fw-bold">Recovered Case</p>
   <span class="text-secondary letter-button-tracker">+${recoveredCaseToday}</span>
   <span class="fs-3 text-success fw-bold">${recoveredCase}</span>
-</div>
-<div
-  class="card border-0 bg-tracker-blue p-3 mb-3 d-flex flex-row align-items-center justify-content-between deaths-case"
->
+  </div>
+  <div
+  class="card border-0 bg-tracker-blue p-3 mb-3 d-flex flex-row align-items-center justify-content-between deaths-case">
   <p class="mb-0 me-4 text-blue-primary fw-bold">Deaths Case</p>
   <span class="text-secondary letter-button-tracker">+${deathCaseToday}</span>
   <span class="fs-3 text-primary fw-bold">${deathCase}</span>
-</div>`;
+  </div>`;
 
   bar_lateral.innerHTML = bar_sup;
   pintarPaises(data);
@@ -111,25 +97,17 @@ function pintarPaises(data) {
 
   for (let i = 0; i < newData.length; i++) {
     countries += `
-  <div
-    class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries mb-2"
-  >
-    <div
-      class="d-flex flex-row justify-content-center align-items-center"
-    >
-      <img
-        class="img-countries me-2"
-        src="${newData[i].countryInfo.flag}"
-        alt="fly"
-      />
+    <div class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries mb-2">
+    <div class="d-flex flex-row justify-content-center align-items-center">
+      <img class="img-countries me-2" src="${newData[i].countryInfo.flag}" alt="fly" />
       <p class="mb-0">${newData[i].country}</p>
     </div>
     <div>
       <p class="mb-0 text-blue-primary">${newData[i].cases}</p>
     </div>
-  </div>
-</div>
-</div>`;
+    </div>
+    </div>
+    </div>`;
   }
   barra_paises.innerHTML = countries;
 }

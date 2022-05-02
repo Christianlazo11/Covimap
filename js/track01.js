@@ -37,9 +37,7 @@ const months = {
 
 //Obtenemos la barra lateral superior
 const bar_lateral = document.getElementById("barra_info_superior");
-//Obtenemos la barra de paises
 const barra_paises = document.getElementById("barra_paises");
-//Obtenmos
 const selectCountries = document.getElementById("select_countries");
 const update = document.getElementById("update");
 
@@ -155,25 +153,17 @@ function pintarPaises(data) {
 
   for (let i = 0; i < newData.length; i++) {
     countries += `
-  <div
-    class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries mb-2"
-  >
-    <div
-      class="d-flex flex-row justify-content-center align-items-center"
-    >
-      <img
-        class="img-countries me-2"
-        src="${newData[i].countryInfo.flag}"
-        alt="fly"
-      />
+  <div class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries mb-2">
+  <div class="d-flex flex-row justify-content-center align-items-center" >
+      <img class="img-countries me-2" src="${newData[i].countryInfo.flag}" alt="fly" />
       <p class="mb-0">${newData[i].country}</p>
     </div>
     <div>
       <p class="mb-0 text-blue-primary">${newData[i].cases}</p>
     </div>
   </div>
-</div>
-</div>`;
+  </div>
+  </div>`;
   }
   barra_paises.innerHTML = countries;
 }
@@ -2432,8 +2422,6 @@ function printDataCountry(data) {
     </div>
   </div>
 </div>`;
-
-  //Agreamos los datos al dom del html
   cardC.innerHTML = body;
 }
 
@@ -2442,12 +2430,3 @@ function printDate(data) {
   let body = `<p class="mb-0 text-dark fst-italic">Update:   <span class="text-dark">${data}</span></p> `;
   update.innerHTML = body;
 }
-
-// getSvg();
-// function getSvg() {
-//   let svgPaths = document.getElementsByTagNameNS("path");
-//   console.log(svgPaths);
-
-//   svgPaths = Array.from(svgPaths);
-//   console.log(svgPaths);
-// }

@@ -93,25 +93,17 @@ function pintarPaises(data) {
 
   for (let i = 0; i < newData.length; i++) {
     countries += `
-  <div
-    class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries mb-2"
-  >
-    <div
-      class="d-flex flex-row justify-content-center align-items-center"
-    >
-      <img
-        class="img-countries me-2"
-        src="${newData[i].countryInfo.flag}"
-        alt="fly"
-      />
+    <div class="card d-flex flex-row justify-content-between align-items-center p-2 shadow-sm border-1 countries mb-2">
+    <div class="d-flex flex-row justify-content-center align-items-center">
+      <img class="img-countries me-2" src="${newData[i].countryInfo.flag}" alt="fly"/>
       <p class="mb-0">${newData[i].country}</p>
     </div>
     <div>
       <p class="mb-0 text-blue-primary">${newData[i].cases}</p>
     </div>
-  </div>
-</div>
-</div>`;
+    </div>
+    </div>
+    </div>`;
   }
   barra_paises.innerHTML = countries;
 }
@@ -160,8 +152,8 @@ function pintarTrackerV(data) {
              </div>
          </div>
      </div>
- </div>
- </div>
+    </div>
+    </div>
 
 `;
   }
